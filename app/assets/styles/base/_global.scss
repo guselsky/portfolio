@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: $mainColor;
+	background-color: $mainColor;
+	font-family: Sans-Serif;
+	width: 100%;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
