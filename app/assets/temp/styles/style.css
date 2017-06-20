@@ -409,13 +409,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  background-color: #fff;
-  height: 100vh; }
-
 .central-container {
   max-width: 1200px;
   padding: 0 30px;
@@ -425,6 +418,11 @@ img {
     content: "";
     clear: both;
     display: table; }
+
+.container--800 {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
 
 .text-box__paragraph {
   padding: 5px 15px;
@@ -443,14 +441,15 @@ img {
 .hero-section {
   position: relative; }
   .hero-section__image {
-    width: 100%; }
+    width: 100%;
+    margin-top: 75px; }
   .hero-section__text-content {
     position: absolute;
     left: 0;
     width: 100%;
-    top: 25%;
-    -webkit-transform: translateY(-60%);
-    transform: translateY(-60%); }
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
   .hero-section__text {
     margin: 30px; }
 
@@ -462,14 +461,16 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  padding-top: 150px; }
+  padding-top: 150px;
+  display: none; }
   @media only screen and (min-width: 800px) {
     .main-navigation {
       background-color: transparent;
       position: static;
       padding-top: 25px;
       float: right;
-      width: 70%; } }
+      width: 70%;
+      display: block; } }
   @media only screen and (min-width: 1200px) {
     .main-navigation {
       width: 50%;
@@ -499,7 +500,10 @@ img {
 
 .header-bar {
   height: 75px;
-  background-color: #000; }
+  background-color: #000;
+  position: fixed;
+  z-index: 10;
+  width: 100%; }
 
 .logo-container {
   float: none; }
@@ -526,5 +530,31 @@ img {
       float: left;
       color: #fff;
       padding-top: 25px; } }
-  .social-media-section .social-media-section__link {
+  .social-media-section__icon-container {
     float: right; }
+  .social-media-section__icon {
+    float: left;
+    font-size: 20px;
+    padding-left: 10px; }
+  .social-media-section__link {
+    color: #fff; }
+
+.btn {
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #FFF;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333; }
+  .btn--margin-right {
+    margin-right: 30px; }
+  .btn:hover {
+    background-color: #000;
+    color: #fff;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s; }
+  .btn__wrapper {
+    width: 279px;
+    margin: 0 auto; }

@@ -7,6 +7,7 @@
 	left:0;
 	right: 0;
 	padding-top: 150px;
+	display: none;
 
 	@include bp-mamaBear {
 		background-color: transparent;
@@ -14,6 +15,7 @@
 		padding-top: 25px;
 		float: right;
 		width: 70%;
+		display: block;
 	}
 
 	@include bp-papaBear {
@@ -22,6 +24,7 @@
 	}
 
 	ul {
+
 		@include clearfix;
 
 	}
@@ -32,8 +35,6 @@
 		font-weight: 700;
 		font-size: 50px;
 		float: none;
-
-
 
 		@include bp-mamaBear {
 			font-size: 20px;
@@ -53,6 +54,7 @@
 		@include bp-mamaBear {
 			color: #fff;
 		}
+
 	}
 
 }

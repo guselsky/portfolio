@@ -1,16 +1,17 @@
-.container {
-	max-width: 1200px;
-	margin: auto;
-	overflow: hidden;
-	background-color: #fff;
-	height: 100vh;
-}
-
-
 .central-container {
 	max-width: 1200px;
 	padding: 0 30px;
 	margin-left: auto;
 	margin-right: auto;
 	@include clearfix;
+}
+
+.container {
+	
+	&--800 {
+		width: 800px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 }
