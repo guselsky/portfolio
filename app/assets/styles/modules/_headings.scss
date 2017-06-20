@@ -1,4 +1,11 @@
 .heading {
+	
+
+	margin: 0;
+
+	&--main {
+		margin: 15px;
+	}
 
 	&--centered {
 		text-align: center;
