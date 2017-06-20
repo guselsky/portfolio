@@ -1,3 +1,11 @@
-.main-heading {
-	text-align: center;
+.heading {
+
+	&--centered {
+		text-align: center;
+	}
+
+	&--white {
+		color: #fff;
+	}
+	
 }
