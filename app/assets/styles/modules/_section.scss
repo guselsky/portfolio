@@ -1,0 +1,16 @@
+.section {
+	margin: 30px auto;
+	
+	@include bp-mamaBear{
+		max-width: 1200px;
+	}
+
+	&--full-width {
+		max-width: 100%;
+	}
+
+	&--dark {
+		background-color: $mainColor;
+		color: #fff;
+	}
+}
