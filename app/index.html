@@ -38,15 +38,20 @@
 		</div>
 	</div>
 	<div class="hero-section">
-		<img class="hero-section__image" src="assets/images/homberg.jpg" alt="">
+		<picture>
+			<source srcset="assets/images/homberg.jpg" media="(min-width: 1380px)">
+        	<source srcset="assets/images/homberg--medium.jpg" media="(min-width: 990px)">
+        	<source srcset="assets/images/homberg--small.jpg 990w" media="(min-width: 640px)">
+            <img srcset="assets/images/homberg--smaller.jpg 640w" alt="Homberg" class="hero-section__image">
+		</picture>
 		<div class="hero-section__text-content">
 			<div class="container--800">
-				<h1 class="hero-section__main-headline heading--centered heading--white">David Gusel</h1>
+				<h1 class="hero-section__main-headline heading heading--main heading--centered heading--white">David Gusel</h1>
 				<h2 class="hero-section__sub-headline heading--centered heading--white">Web Designer - Web Developer</h2>
 				<p class=" hero-section__text text-box__paragraph text-box__paragraph--centered text-box__paragraph--white">Welcome to my online portfolio. Here you can take a look at samples of my work, find out more about me and contact me.</p>
 				<div class="btn__wrapper">
-				<a href="http://webdesign-gusel.at" class="btn btn--margin-right">I'm Hiring</a>
-				<a href="http://webdesign-gusel.at" class="btn">I need a website</a>
+				<a href="http://webdesign-gusel.at" class="btn btn--margin-right-bottom">Hire Me</a>
+				<a href="http://webdesign-gusel.at" class="btn">Get a website</a>
 				</div>
 			</div>
 		</div>

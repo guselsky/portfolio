@@ -420,7 +420,7 @@ img {
     display: table; }
 
 .container--800 {
-  width: 800px;
+  max-width: 800px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -432,11 +432,14 @@ img {
   .text-box__paragraph--white {
     color: #fff; }
 
-.heading--centered {
-  text-align: center; }
-
-.heading--white {
-  color: #fff; }
+.heading {
+  margin: 0; }
+  .heading--main {
+    margin: 15px; }
+  .heading--centered {
+    text-align: center; }
+  .heading--white {
+    color: #fff; }
 
 .hero-section {
   position: relative; }
@@ -448,10 +451,23 @@ img {
     left: 0;
     width: 100%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%); }
+    @media only screen and (min-width: 530px) {
+      .hero-section__text-content {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); } }
+  .hero-section__main-headline {
+    display: none; }
+    @media only screen and (min-width: 530px) {
+      .hero-section__main-headline {
+        display: block; } }
   .hero-section__text {
-    margin: 30px; }
+    margin: 15px; }
+    @media only screen and (min-width: 530px) {
+      .hero-section__text {
+        margin: 30px; } }
 
 .main-navigation {
   position: fixed;
@@ -535,19 +551,31 @@ img {
   .social-media-section__icon {
     float: left;
     font-size: 20px;
-    padding-left: 10px; }
+    padding-left: 15px; }
   .social-media-section__link {
     color: #fff; }
 
 .btn {
   padding: 10px 15px;
-  display: inline-block;
+  display: block;
   background-color: #FFF;
   border-radius: 20px;
   text-decoration: none;
-  color: #333; }
-  .btn--margin-right {
-    margin-right: 30px; }
+  color: #333;
+  width: 172px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 530px) {
+    .btn {
+      display: inline-block;
+      margin-right: 0;
+      margin-left: 0; } }
+  .btn--margin-right-bottom {
+    margin-bottom: 15px; }
+    @media only screen and (min-width: 530px) {
+      .btn--margin-right-bottom {
+        margin-right: 50px; } }
   .btn:hover {
     background-color: #000;
     color: #fff;
@@ -556,5 +584,7 @@ img {
     -webkit-transition-duration: .3s;
     transition-duration: .3s; }
   .btn__wrapper {
-    width: 279px;
     margin: 0 auto; }
+    @media only screen and (min-width: 530px) {
+      .btn__wrapper {
+        width: 400px; } }

@@ -12,11 +12,22 @@
 		left: 0;
 		width: 100%;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-40%);
+
+		@include bp-babyBear {
+
+			top: 50%;
+			transform: translateY(-50%);
+
+		}
+
 	}
 
 	&__main-headline {
-		
+		display: none;
+		@include bp-babyBear {
+			display: block;
+		}
 	}
 
 	&__sub-headline {
@@ -24,7 +35,10 @@
 	}
 
 	&__text {
-		margin: 30px;
+		
+		margin: 15px;
+
+		@include bp-babyBear {margin: 30px;}
 	}
 
 }
