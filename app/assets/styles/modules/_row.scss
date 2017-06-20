@@ -1,0 +1,14 @@
+.row {
+
+	@include clearfix;
+	
+	&--6 {
+		float: none;
+		width: 100%;
+
+		@include bp-mamaBear {
+			width: 50%;
+			float: right;
+		}
+	}
+}

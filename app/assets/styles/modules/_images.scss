@@ -1,0 +1,19 @@
+.image {
+
+	margin-top: 30px;
+
+	&--medium {
+		width: 300px;
+	}
+
+	&--round {
+		border-radius: 50%;
+	}
+
+	&--centered {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+}
