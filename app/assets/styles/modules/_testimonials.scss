@@ -1,0 +1,20 @@
+.testimonials {
+
+	&__testimonial {
+		margin: 30px 15px;
+		background-color: #ddd;
+		border-radius: 30px;
+	}
+
+	&__text {
+		padding: 15px;
+		font-size: 18px;
+		font-style: italic;
+	}
+
+	&__name {
+		font-size: 20px;
+		padding: 0 45px 15px 45px;
+
+	}
+}
