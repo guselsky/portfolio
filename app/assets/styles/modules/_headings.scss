@@ -10,6 +10,25 @@
 		margin: 15px;
 	}
 
+	&__portfolio-item {
+		padding-left:  15px;
+		padding-bottom: 15px;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	&__portfolio-skills {
+		padding-left: 15px;
+		padding-top: 15px;
+	}
+
+	&--padded {
+		padding-top: 30px;
+	}
+
 	&--centered {
 		text-align: center;
 	}

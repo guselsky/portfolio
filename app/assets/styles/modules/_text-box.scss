@@ -1,12 +1,23 @@
 .text-box {
-	margin-top: 30px;
 
 	&__paragraph {
-		padding: 5px 15px;
+		
 		font-size: 18px;
 
 		&--centered {
 			text-align: center;
+		}
+
+		&--padded {
+			padding: 15px 15px;
+		}
+
+		&--padded-horizontal {
+			padding: 0 15px;
+		}
+
+		&--margin-top {
+			margin-top: 30px;
 		}
 
 		&--white {

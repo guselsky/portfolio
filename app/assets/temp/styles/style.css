@@ -410,9 +410,12 @@ img {
 
 .central-container {
   max-width: 1200px;
-  padding: 0 30px;
+  padding: 0;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (min-width: 800px) {
+    .central-container {
+      padding: 0 30px; } }
   .central-container::after {
     content: "";
     clear: both;
@@ -423,15 +426,18 @@ img {
   margin-right: auto;
   margin-left: auto; }
 
-.text-box {
-  margin-top: 30px; }
-  .text-box__paragraph {
-    padding: 5px 15px;
-    font-size: 18px; }
-    .text-box__paragraph--centered {
-      text-align: center; }
-    .text-box__paragraph--white {
-      color: #fff; }
+.text-box__paragraph {
+  font-size: 18px; }
+  .text-box__paragraph--centered {
+    text-align: center; }
+  .text-box__paragraph--padded {
+    padding: 15px 15px; }
+  .text-box__paragraph--padded-horizontal {
+    padding: 0 15px; }
+  .text-box__paragraph--margin-top {
+    margin-top: 30px; }
+  .text-box__paragraph--white {
+    color: #fff; }
 
 .heading {
   margin: 0; }
@@ -439,6 +445,17 @@ img {
     font-size: 30px; }
   .heading__hero {
     margin: 15px; }
+  .heading__portfolio-item {
+    padding-left: 15px;
+    padding-bottom: 15px; }
+    .heading__portfolio-item a {
+      color: #fff;
+      text-decoration: none; }
+  .heading__portfolio-skills {
+    padding-left: 15px;
+    padding-top: 15px; }
+  .heading--padded {
+    padding-top: 30px; }
   .heading--centered {
     text-align: center; }
   .heading--white {
@@ -666,6 +683,8 @@ img {
   .section--dark {
     background-color: #333;
     color: #fff; }
+  .section--padding-bottom {
+    padding-bottom: 30px; }
 
 .image {
   margin-top: 30px; }
@@ -677,6 +696,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: block; }
+  .image--padded-horizontal {
+    padding: 0 15px; }
 
 .testimonials__testimonial {
   margin: 30px 15px;
@@ -690,4 +711,34 @@ img {
 
 .testimonials__name {
   font-size: 20px;
-  padding: 0 45px 15px 45px; }
+  padding: 0 45px 15px 45px;
+  color: #397EA8;
+  font-style: italic; }
+
+.portfolio__item {
+  margin-top: 30px;
+  overflow: auto; }
+
+.portfolio__skills {
+  padding: 15px; }
+  .portfolio__skills::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .portfolio__skills li {
+    float: none;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: 0 15px 15px 15px;
+    color: #fff;
+    border-radius: 15px;
+    text-align: left;
+    padding: 5px 0; }
+    @media only screen and (min-width: 800px) {
+      .portfolio__skills li {
+        float: left;
+        margin-right: 15px;
+        margin-left: 0;
+        background-color: #397EA8;
+        list-style: none;
+        padding: 5px 15px; } }
