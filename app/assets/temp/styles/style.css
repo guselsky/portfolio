@@ -593,12 +593,13 @@ img {
     .menu-icon {
       display: none; } }
 
-.header-bar {
+.navigation-bar {
   height: 75px;
   background-color: black;
-  position: fixed;
-  z-index: 10;
   width: 100%; }
+  .navigation-bar--fixed {
+    position: fixed;
+    z-index: 10; }
 
 .logo-container {
   float: none; }
@@ -625,6 +626,10 @@ img {
       float: left;
       color: #fff;
       padding-top: 25px; } }
+  .social-media-section--centered {
+    width: 96px;
+    float: none;
+    margin: auto; }
   .social-media-section__icon-container {
     float: right; }
   .social-media-section__icon {

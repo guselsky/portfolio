@@ -1,9 +1,12 @@
-.header-bar {
+.navigation-bar {
 	height: 75px;
 	background-color: rgba(0,0,0,1);
-	position: fixed;
-	z-index: 10;
 	width: 100%;
+	
+	&--fixed {
+		position: fixed;
+		z-index: 10;
+	}
 
 }
 
@@ -41,9 +44,15 @@
 		padding-top: 25px;
 	}
 
-	 &__icon-container {
-	 	float: right;
-	 }
+	&--centered {
+		width: 96px;
+		float: none;
+		margin: auto;
+	}
+
+	&__icon-container {
+		float: right;
+	}
 
 	&__icon {
 		float: left;
