@@ -19,10 +19,10 @@
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<a href="">Portfolio</a>
+						<a href="#about-me">About Me</a>
 					</li>
 					<li>
-						<a href="">About Me</a>
+						<a href="#portfolio">Portfolio</a>
 					</li>
 					<li>
 						<a href="">Contact Me</a>
@@ -44,60 +44,111 @@
 	<div class="hero-section"> <!-- Hero Section -->
 		<picture>
 			<source srcset="assets/images/homberg.jpg" media="(min-width: 1380px)">
-			<source srcset="assets/images/homberg--medium.jpg" media="(min-width: 990px)">
-			<source srcset="assets/images/homberg--small.jpg 990w" media="(min-width: 640px)">
-			<img srcset="assets/images/homberg--smaller.jpg 640w" alt="Homberg" class="hero-section__image">
-		</picture>
-		<div class="hero-section__text-content">
-			<div class="container--800">
-				<h1 class="hero-section__main-headline heading heading__hero heading--centered heading--white">David Gusel</h1>
-				<h2 class="hero-section__sub-headline heading--centered heading--white">Web Designer - Web Developer</h2>
-				<p class=" hero-section__text text-box__paragraph text-box__paragraph--centered text-box__paragraph--white">Welcome to my online portfolio. Here you can take a look at samples of my work, find out more about me and contact me.</p>
-				<div class="btn__wrapper">
-					<a href="http://webdesign-gusel.at" class="btn btn--margin-right-bottom">Hire Me</a>
-					<a href="http://webdesign-gusel.at" class="btn">Get a website</a>
+				<source srcset="assets/images/homberg--medium.jpg" media="(min-width: 990px)">
+					<source srcset="assets/images/homberg--small.jpg 990w" media="(min-width: 640px)">
+						<img srcset="assets/images/homberg--smaller.jpg 640w" alt="Homberg" class="hero-section__image">
+					</picture>
+					<div class="hero-section__text-content">
+						<div class="container--800">
+							<h1 class="hero-section__main-headline heading heading__hero heading--centered heading--white">David Gusel</h1>
+							<h2 class="hero-section__sub-headline heading--centered heading--white">Web Designer - Web Developer</h2>
+							<p class=" hero-section__text text-box__paragraph text-box__paragraph--centered text-box__paragraph--white">Welcome to my online portfolio. Here you can take a look at samples of my work, find out more about me and contact me.</p>
+							<div class="btn__wrapper">
+								<a href="http://webdesign-gusel.at" class="btn btn--margin-right-bottom">Hire Me</a>
+								<a href="http://webdesign-gusel.at" class="btn">Get a website</a>
+							</div>
+						</div>
+					</div>
+				</div> <!-- Hero Section -->
+
+				<div id="about-me" class="section row"> <!-- About Me Section -->
+					<h2 class=" heading heading__section heading--centered">About Me</h2>
+					<div class="testimonials"> <!-- Testimonials -->
+						<div class="testimonials__testimonial">
+							<p class="testimonials__text">"We contacted David Gusel because we wanted to make our existing website multilingual. Mr. Gusel completed this task very quickly, professionally and to our full satisfaction. From the beginning, the communication was friendly, clear and simple, which made the cooperation very easy. What we value in Mr. Gusel was not only his professional work, but also the fact that he temporarily became part of the project and included his own thoughts. [...] We can recommend Mr. Gusel unconditionally."</p>
+							<p class="testimonials__name">Daniel Bosshard</p>
+						</div>
+
+						<div class="testimonials__testimonial">
+							<p class="testimonials__text">"In the early days of the internet a friend had created a website for me. It was interesting and funny but no longer up to date. So I needed a new website. [...] I wanted a simple but very informative website and that has been achieved and then some! I can really recommend David and hope our collaboration will keep going on for some time."</p>
+							<p class="testimonials__name">Werner Stolz</p>
+						</div>
+
+						<div class="testimonials__testimonial">
+							<p class="testimonials__text">"[...] I was very satisfied with David’s  work. He was quick, reliably, friendly, helpful and can explain well and structured. I can recommend David on any account and already have done so."</p>
+							<p class="testimonials__name">Susanne Benzing</p>
+						</div>
+
+					</div> <!-- Testimonials -->
+					<div class="row--6">
+						<img class="image image--round image--medium image--centered image--padded-horizontal" src="assets/images/david-gusel.jpg" alt="">
+					</div>
+					<div class="row--6">	
+						<p class="text-box text-box__paragraph text-box__paragraph--padded">My first ventures into the world of website creation were in 2006 when I taught myself HTML and CSS in order to create a website for my youth group. Even though the website was never published, I was instantly fascinated with the possibilities this technology offers. However it was not until my final years in university studying philosophy that I realized that I want to work in the field of web design and web development.</p>
+
+						<p class="text-box text-box__paragraph text-box__paragraph--padded">In the last years of my BA program I started dedicating more and more time towards learning web technologies and design principles. The year I graduated, I started freelancing and building websites for clients. Seeing this as the best decision of my career I have had a successful freelancing career since. Even though it has been a lot of hard work, overcoming many challenges and making and learning from many mistakes. I am in love with improving websites, user experiences and learning and applying new technologies.</p>
+
+						<p class="text-box text-box__paragraph text-box__paragraph--padded">I regard my unusual career path as an advantage. Studying Philosophy has had a huge impact in many areas of my daily work. Logic and analytical thinking helps me in programming as well as in designing front ends, Ethics defines the way I work as well as the way I communicate with and serve my clients and Epistemology is a huge asset when it comes to analyzing and optimizing user experience.</p>
+
+						<p class="text-box text-box__paragraph text-box__paragraph--padded">In the years to come I want to constantly keep learning, keep creating websites and share my enthusiasm with those who walk a similar path as I am. </p>
+					</div>
+				</div> <!-- About Me Section -->
+				<div id="portfolio" class="section section--dark section--full-width section--padding-bottom"><!-- Portfolio Section -->
+					<div class="central-container row">
+						<h2 class=" heading heading__section heading--centered heading--padded">Portfolio</h2>
+						<div class="portfolio__item"><!-- Portfolio Item -->
+							<div class="row--6">
+								<h3 class="heading__portfolio-item"><a href="http://davidgusel.com/naturequiz">Nature Quiz</a></h3>
+								<p class="text-box text-box__paragraph text-box__paragraph--padded-horizontal">I developed this quiz app to learn the names of flowers and trees. It is written in vanilla JavaSript.</p>
+								<h4 class="heading__portfolio-skills">Skills Used</h4>
+								<ul class="portfolio__skills">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+								</ul>
+							</div>
+							<div class="row--6">
+								<a href="http://davidgusel.com/naturequiz"><img class="image--padded-horizontal" src="assets/images/naturequiz.jpg" alt="nature quiz"></a>
+							</div>
+						</div><!-- Portfolio Item -->
+						<div class="portfolio__item"><!-- Portfolio Item -->
+							<div class="row--6">
+								<h3 class="heading__portfolio-item"><a href="http://strengerpinsel.at">Strenger Pinsel</a></h3>
+								<p class="text-box text-box__paragraph text-box__paragraph--padded-horizontal">This is the official website for the Viennese painter Werner Stolz and his company Strenger Pinsel. It was created on WordPress with the Divi theme. The design was provided by the customer and implemented by me.</h4>
+								<ul class="portfolio__skills">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>WordPress</li>
+								</ul>
+							</div>
+							<div class="row--6">
+								<a href="http://strengerpinsel.at"><img class="image--padded-horizontal" src="assets/images/strengerpinsel.jpg" alt="nature quiz"></a>
+							</div>
+						</div><!-- Portfolio Item -->
+						<div class="portfolio__item"><!-- Portfolio Item -->
+							<div class="row--6">
+								<h3 class="heading__portfolio-item">Innovation Interchange</h3>
+								<p class="text-box text-box__paragraph text-box__paragraph--padded-horizontal">This Website was designed by me and implemented via a WordPress theme that I developed from scratch.</h4>
+								<ul class="portfolio__skills">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>jQuery</li>
+									<li>PHP</li>
+									<li>WordPress</li>
+								</ul>
+							</div>
+							<div class="row--6">
+								<img class="image--padded-horizontal" src="assets/images/innovation-interchange.jpg" alt="nature quiz">
+							</div>
+						</div><!-- Portfolio Item -->
+					</div>
+				</div><!-- Portfolio Section -->
+				<div class="section">
+
+				<h2 class=" heading heading__section heading--centered">Contact Me</h2>			
+				<p class="text-box text-box__paragraph text-box__paragraph--margin-top">If you want to get into contact with me, please drop me an email at <a href="mailto:david@gusel.org">david@gusel.org</a> or message me on LinkedIn. I'm looking forward to hearing from you!</p>
+					
 				</div>
-			</div>
-		</div>
-	</div> <!-- Hero Section -->
-	<div class="section row"> <!-- About Me Section -->
-		<h2 class=" heading heading__section heading--centered">About Me</h2>
-		<div class="testimonials"> <!-- Testimonials -->
-			<div class="testimonials__testimonial"><p class="testimonials__text">"We contacted David Gusel because we wanted to make our existing website multilingual. Mr. Gusel completed this task very quickly, professionally and to our full satisfaction. From the beginning, the communication was friendly, clear and simple, which made the cooperation very easy. What we value in Mister Gusel was not only his professional work, but also the fact that he temporarily became part of the project and included his own thoughts. [...] We can recommend Mr. Gusel unconditionally."</p>
-						<p class="testimonials__name">Daniel Bosshard</p></div>
-
-			<div class="testimonials__testimonial"><p class="testimonials__text">"In the early days of the internet a friend had created a website for me. It was interesting and funny but no longer up to date. So I needed a new website. [...] I wanted a simple but very informative website and that has been achieved and then some! I can really recommend David and hope our collaboration will keep going on for some time."</p>
-			<p class="testimonials__name">Werner Stolz</p></div>
-
-			<div class="testimonials__testimonial"><p class="testimonials__text">"[...] I was very content with David’s  work. He was quick, reliably, friendly, helpful and can explain well and structured. I can recommend David on any account and already have done so."</p>
-			<p class="testimonials__name">Susanne Benzing</p></div>
-
-
-		</div> <!-- Testimonials -->
-		<div class="row--6">
-			<img class="image image--round image--medium image--centered" src="assets/images/david-gusel.jpg" alt="">
-		</div>
-		<div class="row--6">	<p class="text-box text-box__paragraph">My first ventures into the world of website creation were in 2006 when I taught myself HTML and CSS in order to create a website for my youth group. Even though the website was never published, I was instantly fascinated with the possibilities this technology offers. However it was not until my final years in university studying philosophy that I realized that I want to work in the field of web design and web development.</p>
-
-			<p class="text-box text-box__paragraph">In the last years of my BA program I started dedicating more and more time towards learning web technologies and design principles. The year I graduated, I started freelancing and building websites for clients. Seeing this as the best decision of my career I have had a successful freelancing career since. Even though it has been a lot of hard work, overcoming many challenges and making and learning from many mistakes. I am in love with improving websites, user experiences and learning and applying new technologies.</p></div>
-
-			<p class="text-box text-box__paragraph">I regard my unusual career path as an advantage. Studying Philosophy has had a huge impact in many areas of my daily work. Logic and analytical thinking helps me in programming as well as in designing front ends, Ethics defines the way I work as well as the way I communicate with and serve my clients and Epistemology is a huge asset when it comes to analyzing and optimizing user experience.</p>
-
-			<p class="text-box text-box__paragraph">In the years to come I want to constantly keep learning, keep creating websites and share my enthusiasm with those who walk a similar path as I am. </p>
-
-		</div> <!-- About Me Section -->
-		<div class="section section--dark section--full-width row">
-			<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, minima doloremque adipisci aut illo totam nulla recusandae, fugiat hic fugit omnis unde consequuntur voluptatum. Obcaecati mollitia rem id corrupti error!</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex dicta non, earum sunt totam, magni odio explicabo beatae doloribus et eos. Dolorum consequatur aspernatur, corporis ex pariatur saepe dolores.</p>
-
-			<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, minima doloremque adipisci aut illo totam nulla recusandae, fugiat hic fugit omnis unde consequuntur voluptatum. Obcaecati mollitia rem id corrupti error!</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex dicta non, earum sunt totam, magni odio explicabo beatae doloribus et eos. Dolorum consequatur aspernatur, corporis ex pariatur saepe dolores.</p>
-
-			<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, minima doloremque adipisci aut illo totam nulla recusandae, fugiat hic fugit omnis unde consequuntur voluptatum. Obcaecati mollitia rem id corrupti error!</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex dicta non, earum sunt totam, magni odio explicabo beatae doloribus et eos. Dolorum consequatur aspernatur, corporis ex pariatur saepe dolores.</p>
-		</div>
-	</body>
-	</html>
+			</body>
+			</html>
