@@ -5,6 +5,14 @@
 		overflow: auto;
 	}
 
+	&__item-header {
+		@include clearfix;
+
+		h3, span {
+			float: left;
+		}
+	}
+
 	&__skills {
 	
 		padding: 15px;

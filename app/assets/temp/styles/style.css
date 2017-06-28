@@ -516,6 +516,7 @@ img {
       background-color: transparent;
       position: static;
       padding-top: 25px;
+      margin-top: 0;
       float: right;
       width: 70%;
       display: block; } }
@@ -533,10 +534,19 @@ img {
     font-size: 50px;
     float: none; }
     @media only screen and (min-width: 800px) {
+      .main-navigation li:last-child {
+        margin-right: 0; } }
+    @media only screen and (min-width: 1200px) {
+      .main-navigation li:last-child {
+        margin-right: 0; } }
+    @media only screen and (min-width: 800px) {
       .main-navigation li {
         font-size: 20px;
         float: left;
-        width: 25%; } }
+        margin-right: 15px; } }
+    @media only screen and (min-width: 1200px) {
+      .main-navigation li {
+        margin-right: 30px; } }
   .main-navigation a {
     color: #333;
     text-decoration: none;
@@ -746,6 +756,14 @@ img {
 .portfolio__item {
   margin-top: 30px;
   overflow: auto; }
+
+.portfolio__item-header::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.portfolio__item-header h3, .portfolio__item-header span {
+  float: left; }
 
 .portfolio__skills {
   padding: 15px; }
