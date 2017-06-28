@@ -7,23 +7,23 @@
 		position: fixed;
 		z-index: 10;
 	}
-
 }
 
 .logo-container {
 
 	float: none;
+	margin-left: 15px;
 
 	@include bp-mamaBear {
 		width: 30%;
 		float: left;
+		margin-left: 0;
 	}
 
 	@include bp-papaBear {
 		width: 25%;
 		float: left;
 	}
-
 }
 
 .logo {

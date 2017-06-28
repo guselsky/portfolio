@@ -501,13 +501,16 @@ img {
 .main-navigation {
   position: fixed;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  padding-top: 150px;
+  padding-top: 75px;
+  margin-top: 75px;
   display: none; }
+  .main-navigation--visible {
+    display: block; }
   @media only screen and (min-width: 800px) {
     .main-navigation {
       background-color: transparent;
@@ -602,11 +605,13 @@ img {
     z-index: 10; }
 
 .logo-container {
-  float: none; }
+  float: none;
+  margin-left: 15px; }
   @media only screen and (min-width: 800px) {
     .logo-container {
       width: 30%;
-      float: left; } }
+      float: left;
+      margin-left: 0; } }
   @media only screen and (min-width: 1200px) {
     .logo-container {
       width: 25%;

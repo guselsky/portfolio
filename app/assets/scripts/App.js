@@ -1,3 +1,4 @@
+import MobileMenu from './modules/MobileMenu';
 import $ from 'jquery';
 
-$('.logo').hide();
+var mobileMenu = new MobileMenu();
