@@ -11,7 +11,9 @@ cssnano = require('gulp-cssnano'),
 imagemin = require('gulp-imagemin'),
 cache = require('gulp-cache'),
 del = require('del'),
-runSequence = require('run-sequence');
+runSequence = require('run-sequence'),
+webpack = require('webpack'),
+modernizr = require('gulp-modernizr');
 
 // Default Task
 gulp.task('default', function (callback) {
@@ -20,12 +22,20 @@ gulp.task('default', function (callback) {
   )
 });
 
+// Watch Task
 gulp.task('watch', ['browserSync', 'sass'], function() {
 
     gulp.watch('app/assets/styles/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload); 
-    gulp.watch('app/assets/scripts/**/*.js', browserSync.reload); 
+    gulp.watch('app/assets/scripts/**/*.js', function() {
+      gulp.start('scriptsRefresh');  
+    }); 
 });
+
+
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
+})
 
 // Sass task, will run when any SCSS files change & BrowserSync
 // will auto-update browsers
@@ -56,6 +66,29 @@ gulp.task('browserSync', function() {
       baseDir: 'app'
     },
   })
+});
+
+// Scripts Task
+
+gulp.task('scripts', ['modernizr'], function(callback) {
+  webpack(require('./webpack.config.js'), function(err, stats) {
+    if(err) {
+      console.log(err.toString());
+    }
+
+    console.log(stats.toString());
+    callback();
+  });
+});
+
+gulp.task('modernizr', function() {
+  return gulp.src(['./app/assets/styles/**/*.css', './app/assets/scripts/**/*.js'])
+  .pipe(modernizr({
+    'options': [
+      'setClasses'
+    ]
+  }))
+  .pipe(gulp.dest('./app/temp/scripts'));
 });
 
 // Gulp Build Task
