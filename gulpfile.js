@@ -53,7 +53,7 @@ gulp.task('sass', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('app/assets/temp/styles'))
+        .pipe(gulp.dest('app/temp/styles'))
         .pipe(browserSync.reload({
             stream: true
         }))

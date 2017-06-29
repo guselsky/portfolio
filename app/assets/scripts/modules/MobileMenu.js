@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 class MobileMenu {
-	// Select From The Dom
+	// Select From The DOM
 	constructor() {
 		this.menuIcon = $('.menu-icon');
 		this.menuContent = $('.main-navigation');

@@ -47,6 +47,10 @@
 		@include bp-babyBear { margin-right: 50px; }
 	}
 
+	&--pointer {
+		cursor: pointer;
+	}
+
 	&__wrapper {
 		
 		margin: 0 auto;

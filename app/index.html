@@ -5,9 +5,10 @@
 	<title>David Gusel - Web Developer - Web Designer</title>
 	<meta name="keywords" content="Web Developer, Web Designer, David Gusel">
 	<meta name="description" content="David Gusel - Web Developer and Web Designer">
-	<link rel="stylesheet" type="text/css" href="assets/temp/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="./temp/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Roboto:400,400i,700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/5d3d653dc7.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
 </head>
 <body>
 	<header class="navigation-bar navigation-bar--fixed"> <!-- Header Bar -->
@@ -25,13 +26,13 @@
 						<a href="#portfolio">Portfolio</a>
 					</li>
 					<li>
-						<a href="">Contact</a>
+						<a href="#contact">Contact</a>
 					</li>
 					<li>
 						<a href="">Reading List</a>
 					</li>
 					<li>
-						<a href="">Hire Me</a>
+						<a href="#contact">Hire Me</a>
 					</li>
 				</ul>
 			</nav>
@@ -114,7 +115,11 @@
 								</ul>
 							</div>
 							<div class="row--6">
-								<a href="http://davidgusel.com/naturequiz"><img class="image--padded-horizontal" src="assets/images/naturequiz.jpg" alt="nature quiz"></a>
+								<a href="http://davidgusel.com/naturequiz">
+									<div class="image--padded-horizontal">
+										<img class="image--border-white" src="assets/images/naturequiz.jpg" alt="nature quiz">
+									</div>
+								</a>
 							</div>
 						</div><!-- Portfolio Item -->
 						<div class="portfolio__item"><!-- Portfolio Item -->
@@ -127,8 +132,13 @@
 									<li>WordPress</li>
 								</ul>
 							</div>
+							
 							<div class="row--6">
-								<a href="http://strengerpinsel.at"><img class="image--padded-horizontal" src="assets/images/strengerpinsel.jpg" alt="nature quiz"></a>
+								<a href="http://strengerpinsel.at">
+									<div class="image--padded-horizontal">
+										<img class="image--border-black" src="assets/images/strengerpinsel.jpg" alt="nature quiz">
+									</div>
+								</a>
 							</div>
 						</div><!-- Portfolio Item -->
 						<div class="portfolio__item"><!-- Portfolio Item -->
@@ -147,21 +157,26 @@
 								</ul>
 							</div>
 							<div class="row--6">
-								<img class="image--padded-horizontal" src="assets/images/innovation-interchange.jpg" alt="nature quiz">
+								<a href="http://innovation-interchange.at">
+									<div class="image--padded-horizontal">
+										<img class="image--border-black" src="assets/images/innovation-interchange.jpg" alt="nature quiz">
+									</div>
+								</a>
 							</div>
 						</div><!-- Portfolio Item -->
 					</div>
 				</div><!-- Portfolio Section -->
-				<div class="section">
+				<div id="contact" class="section"><!-- Contact -->
 
-				<h2 class=" heading heading__section heading--centered">Contact Me</h2>			
+				<h2 class="heading heading__section heading--centered">Contact Me</h2>			
 				<p class="text-box text-box__paragraph text-box__paragraph--margin-top text-box__paragraph--centered text-box__paragraph--large">I'm looking forward to hearing from you!</p>
-				<p class="text-box text-box__paragraph text-box__paragraph--margin-top text-box__paragraph--centered text-box__paragraph--extra-large text-box__paragraph--blue text-box__paragraph--bold">david@gusel.org</p>
+				<p id="email" class="text-box text-box__paragraph text-box__paragraph--margin-top text-box__paragraph--centered text-box__paragraph--extra-large text-box__paragraph--blue text-box__paragraph--bold">david@gusel.org</p>
 
-				<div class="btn__wrapper btn__wrapper--margin-top"><a class="btn btn--blue-white btn--margin-right-bottom" href="#">Copy Email</a>
+				<div class="btn__wrapper btn__wrapper--margin-top"><div id="copy-email" class="btn btn--blue-white btn--margin-right-bottom btn--pointer" data-clipboard-target="#email">Copy Email</div>
 				<a  class="btn btn--blue-white" href="mailto:david@gusel.org">Mailto:</a></div>
 					
-				</div>
+				</div><!-- Contact -->
+
 				<footer class="navigation-bar">
 					<div class="central-container">
 						<div class="social-media-section social-media-section--centered">
