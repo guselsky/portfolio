@@ -1,0 +1,12 @@
+.email {
+	position: absolute;
+	left: -9999px;
+}
+
+.copy-email-notification {
+	visibility: hidden;
+
+	&--visible {
+		visibility: visible;
+	}
+}

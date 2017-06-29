@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10347,6 +10347,53 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var CopyEmail = function () {
+	function CopyEmail() {
+		_classCallCheck(this, CopyEmail);
+
+		this.copyEmail = (0, _jquery2.default)('.copy-email');
+		this.copyEmailNotification = (0, _jquery2.default)('.copy-email-notification');
+		this.events();
+	}
+
+	_createClass(CopyEmail, [{
+		key: 'events',
+		value: function events() {
+			this.copyEmail.click(this.copyToClipboard.bind(this));
+		}
+	}, {
+		key: 'copyToClipboard',
+		value: function copyToClipboard() {
+			this.copyEmailNotification.toggleClass('copy-email-notification--visible');
+		}
+	}]);
+
+	return CopyEmail;
+}();
+
+exports.default = CopyEmail;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 var MobileMenu = function () {
 	// Select From The DOM
 	function MobileMenu() {
@@ -10379,15 +10426,19 @@ var MobileMenu = function () {
 exports.default = MobileMenu;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _MobileMenu = __webpack_require__(1);
+var _MobileMenu = __webpack_require__(2);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _CopyEmail = __webpack_require__(1);
+
+var _CopyEmail2 = _interopRequireDefault(_CopyEmail);
 
 var _jquery = __webpack_require__(0);
 
@@ -10396,7 +10447,8 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
-var copyEmail = new Clipboard('#copy-email');
+var copyEmail = new _CopyEmail2.default();
+new Clipboard('.copy-email');
 
 /***/ })
 /******/ ]);
