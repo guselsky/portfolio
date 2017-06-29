@@ -684,10 +684,12 @@ img {
       color: #fff; }
   .btn--blue-white {
     background-color: #397EA8;
-    color: #fff; }
+    color: #fff;
+    border: 1px solid #fff; }
     .btn--blue-white:hover {
       background-color: #fff;
-      color: #397EA8; }
+      color: #397EA8;
+      border: 1px solid #397EA8; }
   .btn--margin-right-bottom {
     margin-bottom: 15px; }
     @media only screen and (min-width: 530px) {
@@ -802,6 +804,14 @@ img {
   left: -9999px; }
 
 .copy-email-notification {
-  visibility: hidden; }
+  color: #fff;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s; }
   .copy-email-notification--visible {
-    visibility: visible; }
+    color: #397EA8;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s; }

@@ -1,0 +1,16 @@
+.email {
+	position: absolute;
+	left: -9999px;
+}
+
+.copy-email-notification {
+	color: #fff;
+	transition-property: all;
+	transition-duration: .3s;
+
+	&--visible {
+		color: $mainBlue;
+		transition-property: all;
+		transition-duration: .3s;
+	}
+}
