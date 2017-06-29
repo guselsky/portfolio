@@ -19,4 +19,12 @@
 	&--padded-horizontal {
 		padding: 0 15px;
 	}
+
+	&--border-white {
+		border: 5px solid white;
+	}
+
+	&--border-black {
+		border: 5px solid black;
+	}
 }
