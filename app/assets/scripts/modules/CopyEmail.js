@@ -2,10 +2,9 @@ import $ from 'jquery';
 
 class CopyEmail {
 	constructor() {
-		this.copyEmail = $('#copy-email');
-		this.email = $('#email');
+		this.copyEmail = $('.copy-email');
+		this.copyEmailNotification = $('.copy-email-notification');
 		this.events();
-
 	}
 
 	events() {
@@ -13,10 +12,7 @@ class CopyEmail {
 	}
 
 	copyToClipboard() {
-		const email = 'david@gusel.org';
-		console.log(email);
-		
-		// document.execCommand('copy', false, this.email[0].innerHtml.select());
+		this.copyEmailNotification.toggleClass('copy-email-notification--visible');
 	}
 }
 

@@ -796,3 +796,12 @@ img {
         background-color: #397EA8;
         list-style: none;
         padding: 5px 15px; } }
+
+.email {
+  position: absolute;
+  left: -9999px; }
+
+.copy-email-notification {
+  visibility: hidden; }
+  .copy-email-notification--visible {
+    visibility: visible; }
