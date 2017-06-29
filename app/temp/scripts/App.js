@@ -10401,6 +10401,7 @@ var MobileMenu = function () {
 
 		this.menuIcon = (0, _jquery2.default)('.menu-icon');
 		this.menuContent = (0, _jquery2.default)('.main-navigation');
+		this.menuListItem = (0, _jquery2.default)('.main-navigation li');
 		this.events();
 	}
 	// Handle Click Events
@@ -10410,6 +10411,7 @@ var MobileMenu = function () {
 		key: 'events',
 		value: function events() {
 			this.menuIcon.click(this.toggleTheMenu.bind(this));
+			this.menuListItem.click(this.toggleTheMenu.bind(this));
 		}
 		// Set Behaviour
 
