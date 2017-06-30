@@ -1,0 +1,18 @@
+.footer {
+
+	&__container {
+
+		padding-top: 25px;
+
+		@include bp-mamaBear {
+			padding-top: 0;
+		}
+	}
+
+	&__social-media {
+		width: 96px;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+}
