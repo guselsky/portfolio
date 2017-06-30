@@ -498,15 +498,15 @@ img {
       .hero-section__text {
         margin: 30px; } }
 
-.main-navigation {
-  padding-top: 75px;
+.header-navigation {
   margin-top: 75px;
+  padding-top: 75px;
   opacity: 0;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
   position: absolute;
   left: -100%; }
-  .main-navigation--visible {
+  .header-navigation--visible {
     top: 0;
     bottom: 0;
     left: 0;
@@ -515,7 +515,7 @@ img {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.95); }
   @media only screen and (min-width: 800px) {
-    .main-navigation {
+    .header-navigation {
       -webkit-transition: none;
       transition: none;
       opacity: 1;
@@ -528,40 +528,40 @@ img {
       display: block;
       z-index: 10; } }
   @media only screen and (min-width: 1200px) {
-    .main-navigation {
+    .header-navigation {
       width: 50%;
       float: left; } }
-  .main-navigation ul::after {
+  .header-navigation ul::after {
     content: "";
     clear: both;
     display: table; }
-  .main-navigation li {
+  .header-navigation li {
     list-style: none;
     font-weight: 700;
     font-size: 50px;
     float: none; }
     @media only screen and (min-width: 800px) {
-      .main-navigation li:last-child {
+      .header-navigation li:last-child {
         margin-right: 0; } }
     @media only screen and (min-width: 1200px) {
-      .main-navigation li:last-child {
+      .header-navigation li:last-child {
         margin-right: 0; } }
     @media only screen and (min-width: 800px) {
-      .main-navigation li {
+      .header-navigation li {
         font-size: 20px;
         float: left;
         margin-right: 15px; } }
     @media only screen and (min-width: 1200px) {
-      .main-navigation li {
+      .header-navigation li {
         margin-right: 30px; } }
-  .main-navigation a {
+  .header-navigation a {
     color: #333;
     text-decoration: none;
     display: block;
     text-align: left;
     margin-left: 15px; }
     @media only screen and (min-width: 800px) {
-      .main-navigation a {
+      .header-navigation a {
         color: #fff;
         text-align: center;
         margin-left: 0; } }
@@ -616,6 +616,24 @@ img {
     .menu-icon {
       display: none; } }
 
+.social-media-section {
+  display: none; }
+  @media only screen and (min-width: 1200px) {
+    .social-media-section {
+      display: block;
+      width: 25%;
+      float: left;
+      color: #fff;
+      padding-top: 25px; } }
+  .social-media-section__icon-container {
+    float: right; }
+  .social-media-section__icon {
+    float: left;
+    font-size: 20px;
+    padding-left: 15px; }
+  .social-media-section__link {
+    color: #fff; }
+
 .navigation-bar {
   height: 75px;
   background-color: black;
@@ -638,31 +656,11 @@ img {
       float: left; } }
 
 .logo {
-  color: #fff;
-  font-size: 30px;
   padding-top: 20px; }
-
-.social-media-section {
-  display: none; }
-  @media only screen and (min-width: 1200px) {
-    .social-media-section {
-      display: block;
-      width: 25%;
-      float: left;
-      color: #fff;
-      padding-top: 25px; } }
-  .social-media-section--centered {
-    width: 96px;
-    float: none;
-    margin: auto; }
-  .social-media-section__icon-container {
-    float: right; }
-  .social-media-section__icon {
-    float: left;
-    font-size: 20px;
-    padding-left: 15px; }
-  .social-media-section__link {
-    color: #fff; }
+  .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px; }
 
 .btn {
   padding: 10px 15px;
@@ -737,6 +735,17 @@ img {
     color: #fff; }
   .section--padding-bottom {
     padding-bottom: 30px; }
+
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15); }
+  .reveal-item--is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
 
 .image {
   margin-top: 30px; }
@@ -822,3 +831,15 @@ img {
     transition-property: all;
     -webkit-transition-duration: .3s;
     transition-duration: .3s; }
+
+.footer__container {
+  padding-top: 25px; }
+  @media only screen and (min-width: 800px) {
+    .footer__container {
+      padding-top: 0; } }
+
+.footer__social-media {
+  width: 96px;
+  float: none;
+  margin: auto;
+  display: block; }

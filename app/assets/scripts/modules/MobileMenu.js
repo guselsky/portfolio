@@ -4,8 +4,8 @@ class MobileMenu {
 	// Select From The DOM
 	constructor() {
 		this.menuIcon = $('.menu-icon');
-		this.menuContent = $('.main-navigation');
-		this.menuListItem = $('.main-navigation li');
+		this.menuContent = $('.header-navigation');
+		this.menuListItem = $('.header-navigation li');
 		this.events();
 	}
 	// Handle Click Events
@@ -15,7 +15,7 @@ class MobileMenu {
 	}
 	// Set Behaviour
 	toggleTheMenu() {
-		this.menuContent.toggleClass('main-navigation--visible');
+		this.menuContent.toggleClass('header-navigation--visible');
 	}
 }
 

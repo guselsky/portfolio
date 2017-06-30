@@ -9,15 +9,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Roboto:400,400i,700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/5d3d653dc7.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+	<script src="/temp/scripts/Vendor.js"></script>
 </head>
 <body>
 	<header class="navigation-bar navigation-bar--fixed"> <!-- Header Bar -->
 		<div class="central-container">
-			<div class="logo-container"><p class="logo">David Gusel</p></div>
+			<div class="logo-container"><p class="logo"><a class="logo-link" href="#hero">David Gusel</a></p></div>
 			<div class="menu-icon">
 				<div class="menu-icon__middle"></div>
 			</div>
-			<nav class="main-navigation">
+			<nav class="header-navigation">
 				<ul>
 					<li>
 						<a href="#about-me">About Me</a>
@@ -45,7 +46,7 @@
 			</div>
 		</div>
 	</header> <!-- Header Bar -->
-	<div class="hero-section"> <!-- Hero Section -->
+	<div id="hero" class="hero-section"> <!-- Hero Section -->
 		<picture>
 			<source srcset="assets/images/homberg.jpg" media="(min-width: 1380px)">
 				<source srcset="assets/images/homberg--medium.jpg" media="(min-width: 990px)">
@@ -58,7 +59,7 @@
 							<h2 class="hero-section__sub-headline heading--centered heading--white">Web Designer - Web Developer</h2>
 							<p class=" hero-section__text text-box__paragraph text-box__paragraph--centered text-box__paragraph--white">Welcome to my online portfolio. Here you can take a look at samples of my work, find out more about me and contact me.</p>
 							<div class="btn__wrapper">
-								<a href="#about-me" class="btn btn--margin-right-bottom btn--white-gray">Hire Me</a>
+								<a href="#contact" class="btn btn--margin-right-bottom btn--white-gray">Hire Me</a>
 								<a href="http://webdesign-gusel.at" class="btn btn--white-gray">Get a website</a>
 							</div>
 						</div>
@@ -84,10 +85,10 @@
 						</div>
 
 					</div> <!-- Testimonials -->
-					<div class="row--6">
-						<img class="image image--round image--medium image--centered image--padded-horizontal" src="assets/images/david-gusel.jpg" alt="">
+					<div class="about-me row--6">
+						<img class="lazyload image image--round image--medium image--centered image--padded-horizontal" data-src="assets/images/david-gusel.jpg" alt="">
 					</div>
-					<div class="row--6">	
+					<div class=" about-me row--6">	
 						<p class="text-box text-box__paragraph text-box__paragraph--padded">My first ventures into the world of website creation were in 2006 when I taught myself HTML and CSS in order to create a website for my youth group. Even though the website was never published, I was instantly fascinated with the possibilities this technology offers. However it was not until my final years in university studying philosophy that I realized that I want to work in the field of web design and web development.</p>
 
 						<p class="text-box text-box__paragraph text-box__paragraph--padded">In the last years of my BA program I started dedicating more and more time towards learning web technologies and design principles. The year I graduated, I started freelancing and building websites for clients. Seeing this as the best decision of my career I have had a successful freelancing career since. Even though it has been a lot of hard work, overcoming many challenges and making and learning from many mistakes. I am in love with improving websites, user experiences and learning and applying new technologies.</p>
@@ -117,7 +118,7 @@
 							<div class="row--6">
 								<a href="http://davidgusel.com/naturequiz">
 									<div class="image--padded-horizontal">
-										<img class="image--border-white" src="assets/images/naturequiz.jpg" alt="nature quiz">
+										<img class="lazyload image--border-white" data-src="assets/images/naturequiz.jpg" alt="nature quiz">
 									</div>
 								</a>
 							</div>
@@ -136,7 +137,7 @@
 							<div class="row--6">
 								<a href="http://strengerpinsel.at">
 									<div class="image--padded-horizontal">
-										<img class="image--border-black" src="assets/images/strengerpinsel.jpg" alt="nature quiz">
+										<img class="lazyload image--border-black" data-src="assets/images/strengerpinsel.jpg" alt="nature quiz">
 									</div>
 								</a>
 							</div>
@@ -159,7 +160,7 @@
 							<div class="row--6">
 								<a href="http://innovation-interchange.org">
 									<div class="image--padded-horizontal">
-										<img class="image--border-black" src="assets/images/innovation-interchange.jpg" alt="nature quiz">
+										<img class="lazyload image--border-black" data-src="assets/images/innovation-interchange.jpg" alt="nature quiz">
 									</div>
 								</a>
 							</div>
@@ -175,7 +176,7 @@
 
 				<div class="btn__wrapper btn__wrapper--margin-top">
 				<div class="copy-email btn btn--blue-white btn--margin-right-bottom btn--pointer" data-clipboard-target=".email">Copy Email</div>
-				<a  class="btn btn--blue-white" href="mailto:david@gusel.org">Mailto:</a>
+				<a  class="mailto btn btn--blue-white" href="mailto:david@gusel.org">Mailto:</a>
 				</div>
 
 				<p class="text-box text-box__paragraph text-box__paragraph--margin-top text-box__paragraph--centered text-box__paragraph--extra-large text-box__paragraph--blue text-box__paragraph--bold copy-email-notification">Email copied to Clipboard!</p>
@@ -183,9 +184,9 @@
 				</div><!-- Contact -->
 
 				<footer class="navigation-bar">
-					<div class="central-container">
-						<div class="social-media-section social-media-section--centered">
-							<div class="social-media-section__icon-container">
+					<div class="central-container footer__container">
+						<div class="social-media-section footer__social-media">
+							<div class=" social-media-section__icon-container">
 								<span class="social-media-section__icon"><a class="social-media-section__link" href="https://github.com/guselsky"><i class="fa fa-github"></i></a></span>
 								<span class="social-media-section__icon"><a class="social-media-section__link" href="https://www.linkedin.com/in/david-gusel-0324499a/"><i class="fa fa-linkedin"></i></a></span>
 								<span class="social-media-section__icon"><a class="social-media-section__link" href="https://www.xing.com/profile/David_Gusel?sc_o=mxb_p"><i class="fa fa-xing"></i></a></span>
