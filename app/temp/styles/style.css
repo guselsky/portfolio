@@ -695,6 +695,12 @@ img {
       background-color: #fff;
       color: #397EA8;
       border: 1px solid #397EA8; }
+  .btn--blue {
+    background-color: #397EA8;
+    color: #fff; }
+    .btn--blue:hover {
+      background-color: #63a3ca;
+      color: #fff; }
   .btn--margin-right-bottom {
     margin-bottom: 15px; }
     @media only screen and (min-width: 530px) {

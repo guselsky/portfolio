@@ -31,7 +31,9 @@
     "jquery": "^3.2.1",
     "jquery-smooth-scroll": "^2.2.0",
     "node-normalize-scss": "^3.0.0",
+    "rev": "0.0.1",
     "run-sequence": "^1.2.2",
+    "usemin": "^0.5.0",
     "waypoints": "^4.0.1",
     "webpack": "^2.6.1",
     "webpack-stream": "^3.2.0"

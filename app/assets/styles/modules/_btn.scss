@@ -42,6 +42,17 @@
 		}
 	}
 
+	&--blue {
+		background-color: $mainBlue;
+		color: #fff;
+	
+
+		&:hover {
+			background-color: lighten($mainBlue, 15%);
+			color: #fff;
+		}
+	}
+
 	&--margin-right-bottom {
 
 		margin-bottom: 15px;
