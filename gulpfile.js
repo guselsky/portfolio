@@ -1,19 +1,18 @@
+
+
 var gulp = require('gulp'),
 watch = require('gulp-watch'),
 browserSync = require('browser-sync').create(),
 reload = browserSync.reload,
 autoprefixer = require('gulp-autoprefixer'),
 sass = require('gulp-sass'),
-useref = require('gulp-useref'),
 uglify = require('gulp-uglify'),
-gulpIf = require('gulp-if'),
-cssnano = require('gulp-cssnano'),
-imagemin = require('gulp-imagemin'),
+usemin = require('gulp-usemin'),
 cache = require('gulp-cache'),
-del = require('del'),
 runSequence = require('run-sequence'),
 webpack = require('webpack'),
 modernizr = require('gulp-modernizr');
+
 
 // Default Task
 gulp.task('default', function (callback) {
@@ -91,37 +90,39 @@ gulp.task('modernizr', function() {
   .pipe(gulp.dest('./app/temp/scripts'));
 });
 
-// Gulp Build Task
-gulp.task('build', function (callback) {
-  runSequence('clean:dist', 
-    ['sass', 'useref', 'images', 'fonts'],
-    callback
-  )
-});
+require('./gulp/tasks/build');
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('/assets/temp/styles/*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
-});
+// // Gulp Build Task
+// gulp.task('build', function (callback) {
+//   runSequence('clean:dist', 
+//     ['sass', 'useref', 'images', 'fonts'],
+//     callback
+//   )
+// });
 
-gulp.task('images', function(){
-  return gulp.src('app/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  // Caching images that ran through imagemin
-  .pipe(cache(imagemin({
-      interlaced: true
-    })))
-  .pipe(gulp.dest('dist/assets/images'))
-});
+// gulp.task('useref', function(){
+//   return gulp.src('app/*.html')
+//     .pipe(useref())
+//     // Minifies only if it's a JavaScript file
+//     .pipe(gulpIf('*.js', uglify()))
+//     .pipe(gulpIf('app/assets/temp/styles/*.css', cssnano()))
+//     .pipe(gulp.dest('dist'))
+// });
 
-gulp.task('fonts', function() {
-  return gulp.src('app/assets/fonts/**/*')
-  .pipe(gulp.dest('dist/assets/fonts'))
-});
+// gulp.task('images', function(){
+//   return gulp.src('app/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
+//   // Caching images that ran through imagemin
+//   .pipe(cache(imagemin({
+//       interlaced: true
+//     })))
+//   .pipe(gulp.dest('dist/assets/images'))
+// });
 
-gulp.task('clean:dist', function() {
-  return del.sync('dist');
-});
+// gulp.task('fonts', function() {
+//   return gulp.src('app/assets/fonts/**/*')
+//   .pipe(gulp.dest('dist/assets/fonts'))
+// });
+
+// gulp.task('clean:dist', function() {
+//   return del.sync('dist');
+// });
