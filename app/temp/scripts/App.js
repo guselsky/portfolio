@@ -11124,7 +11124,7 @@ var CopyEmail = function () {
 		key: 'events',
 		value: function events() {
 			this.copyEmail.click(this.copyToClipboard.bind(this));
-			this.mailTo.click(this.clickMailTo());
+			this.mailTo.click(this.clickMailTo.bind(this));
 		}
 	}, {
 		key: 'copyToClipboard',
@@ -11136,7 +11136,6 @@ var CopyEmail = function () {
 		key: 'clickMailTo',
 		value: function clickMailTo() {
 			console.log('clicked2');
-			// this.copyEmailNotification.textContent('Opening your email client');
 		}
 	}]);
 
@@ -11310,7 +11309,6 @@ var SmoothScroll = function () {
 		this.logoLink = (0, _jquery2.default)('.logo-link');
 		this.button = (0, _jquery2.default)('.btn');
 		this.addSmoothScrolling();
-		this.refreshWaypoints();
 	}
 
 	_createClass(SmoothScroll, [{

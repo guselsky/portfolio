@@ -716,7 +716,11 @@ img {
     margin-bottom: 15px; }
     @media only screen and (min-width: 530px) {
       .btn--margin-right-bottom {
-        margin-right: 50px; } }
+        margin-right: 50px;
+        margin-bottom: 0; } }
+    @media only screen and (min-width: 800px) {
+      .btn--margin-right-bottom {
+        margin-bottom: 0; } }
   .btn--pointer {
     cursor: pointer; }
   .btn__wrapper {
@@ -851,7 +855,7 @@ img {
 
 .footer__container {
   padding-top: 25px; }
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 1200px) {
     .footer__container {
       padding-top: 0; } }
 

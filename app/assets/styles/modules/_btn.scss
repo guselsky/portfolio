@@ -59,7 +59,9 @@
 
 		margin-bottom: 15px;
 
-		@include bp-babyBear { margin-right: 50px; }
+		@include bp-babyBear { margin-right: 50px; margin-bottom: 0; }
+
+		@include bp-mamaBear { margin-bottom: 0; }
 	}
 
 	&--pointer {
