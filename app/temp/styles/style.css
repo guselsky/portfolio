@@ -540,6 +540,11 @@ img {
     font-weight: 700;
     font-size: 50px;
     float: none; }
+    .header-navigation li:last-child a {
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      background-color: green; }
     @media only screen and (min-width: 800px) {
       .header-navigation li:last-child {
         margin-right: 0; } }
@@ -698,10 +703,12 @@ img {
       border: 1px solid #397EA8; }
   .btn--blue {
     background-color: #397EA8;
-    color: #fff; }
+    color: #fff;
+    border: 2px solid #397EA8; }
     .btn--blue:hover {
       background-color: #63a3ca;
-      color: #fff; }
+      color: #fff;
+      border: 2px solid #fff; }
   .btn--margin-right-bottom {
     margin-bottom: 15px; }
     @media only screen and (min-width: 530px) {

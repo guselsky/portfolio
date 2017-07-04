@@ -13,10 +13,12 @@ class SmoothScroll {
 
 	addSmoothScrolling() {
 		this.headerLinks.smoothScroll({
-			offset: -75
+			offset: -73
 		});
 		this.logoLink.smoothScroll();
-		this.button.smoothScroll();
+		this.button.smoothScroll({
+			offset: -73
+		});
 	}	
 }
 
