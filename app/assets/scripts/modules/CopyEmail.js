@@ -10,7 +10,7 @@ class CopyEmail {
 
 	events() {
 		this.copyEmail.click(this.copyToClipboard.bind(this));
-		this.mailTo.click(this.clickMailTo());
+		this.mailTo.click(this.clickMailTo.bind(this));
 	}
 
 	copyToClipboard() {
@@ -20,7 +20,6 @@ class CopyEmail {
 
 	clickMailTo() {
 		console.log('clicked2');
-		// this.copyEmailNotification.textContent('Opening your email client');
 	}
 }
 

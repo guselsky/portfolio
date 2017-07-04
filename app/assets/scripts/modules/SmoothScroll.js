@@ -8,7 +8,6 @@ class SmoothScroll {
 		this.logoLink = $('.logo-link');
 		this.button = $('.btn');
 		this.addSmoothScrolling();
-		this.refreshWaypoints();
 	}
 
 	addSmoothScrolling() {
