@@ -3,7 +3,7 @@ runSequence = require('run-sequence');
 
 // Default Task
 gulp.task('default', function (callback) {
-  runSequence(['sass', 'watch'],
+  runSequence(['sass', 'scripts', 'watch'],
     callback
   )
 });

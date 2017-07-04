@@ -1,8 +1,11 @@
 var gulp = require('gulp'),
 autoprefixer = require('gulp-autoprefixer'),
+browserSync = require('browser-sync').create(),
+reload = browserSync.reload,
 sass = require('gulp-sass');
 
-// Sass task, will run when any SCSS files change
+// Sass task, will run when any SCSS files change & BrowserSync
+// will auto-update browsers
 gulp.task('sass', function () {
     return gulp.src('./app/assets/styles/**/*.scss')
         .pipe(sass({     
@@ -18,4 +21,7 @@ gulp.task('sass', function () {
             cascade: false
         }))
         .pipe(gulp.dest('./app/temp/styles'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });

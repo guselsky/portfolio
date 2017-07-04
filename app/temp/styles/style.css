@@ -541,10 +541,13 @@ img {
     font-size: 50px;
     float: none; }
     .header-navigation li:last-child a {
-      color: #fff;
-      border: 2px solid #fff;
-      border-radius: 50px;
-      background-color: green; }
+      color: green; }
+      @media only screen and (min-width: 800px) {
+        .header-navigation li:last-child a {
+          color: #fff;
+          border: 2px solid #fff;
+          border-radius: 50px;
+          background-color: green; } }
     @media only screen and (min-width: 800px) {
       .header-navigation li:last-child {
         margin-right: 0; } }

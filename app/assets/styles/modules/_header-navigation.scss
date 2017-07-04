@@ -49,10 +49,14 @@
 		&:last-child {
 
 			a {
-				color: #fff;
-				border: 2px solid #fff;
-				border-radius: 50px;
-				background-color: green;
+				color: green;
+								
+				@include bp-mamaBear {
+					color: #fff;
+					border: 2px solid #fff;
+					border-radius: 50px;
+					background-color: green;
+				}				
 			}
 
 			@include bp-mamaBear {
