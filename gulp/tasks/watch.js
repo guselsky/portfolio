@@ -17,7 +17,7 @@ gulp.task('watch', function() {
     }); 
 
     gulp.watch('./app/assets/styles/**/*.scss', function() {
-    	gulp.start('sass');
+    	gulp.start('sassRefresh');
     });
     
     gulp.watch('./app/assets/scripts/**/*.js', function() {
@@ -25,6 +25,10 @@ gulp.task('watch', function() {
     }); 
 });
 
+gulp.task('sassRefresh', ['sass'], function(){
+	browserSync.reload();
+});
+
 gulp.task('scriptsRefresh', ['scripts'], function() {
   browserSync.reload();
-})
+});
