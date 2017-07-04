@@ -45,11 +45,13 @@
 	&--blue {
 		background-color: $mainBlue;
 		color: #fff;
+		border: 2px solid $mainBlue;
 	
 
 		&:hover {
 			background-color: lighten($mainBlue, 15%);
 			color: #fff;
+		border: 2px solid #fff;
 		}
 	}
 

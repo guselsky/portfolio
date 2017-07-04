@@ -11317,10 +11317,12 @@ var SmoothScroll = function () {
 		key: 'addSmoothScrolling',
 		value: function addSmoothScrolling() {
 			this.headerLinks.smoothScroll({
-				offset: -75
+				offset: -73
 			});
 			this.logoLink.smoothScroll();
-			this.button.smoothScroll();
+			this.button.smoothScroll({
+				offset: -73
+			});
 		}
 	}]);
 
