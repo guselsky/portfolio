@@ -11308,6 +11308,7 @@ var SmoothScroll = function () {
 
 		this.headerLinks = (0, _jquery2.default)('.header-navigation a');
 		this.logoLink = (0, _jquery2.default)('.logo-link');
+		this.button = (0, _jquery2.default)('.btn');
 		this.addSmoothScrolling();
 		this.refreshWaypoints();
 	}
@@ -11315,8 +11316,11 @@ var SmoothScroll = function () {
 	_createClass(SmoothScroll, [{
 		key: 'addSmoothScrolling',
 		value: function addSmoothScrolling() {
-			this.headerLinks.smoothScroll();
+			this.headerLinks.smoothScroll({
+				offset: -75
+			});
 			this.logoLink.smoothScroll();
+			this.button.smoothScroll();
 		}
 	}]);
 

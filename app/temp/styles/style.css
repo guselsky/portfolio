@@ -529,7 +529,7 @@ img {
       z-index: 10; } }
   @media only screen and (min-width: 1200px) {
     .header-navigation {
-      width: 50%;
+      width: 540px;
       float: left; } }
   .header-navigation ul::after {
     content: "";
@@ -550,7 +550,8 @@ img {
       .header-navigation li {
         font-size: 20px;
         float: left;
-        margin-right: 15px; } }
+        margin-right: 15px;
+        width: 110px; } }
     @media only screen and (min-width: 1200px) {
       .header-navigation li {
         margin-right: 30px; } }
@@ -730,7 +731,7 @@ img {
       float: right; } }
 
 .section {
-  margin: 30px auto; }
+  margin: 0 auto; }
   @media only screen and (min-width: 800px) {
     .section {
       max-width: 1200px; } }
