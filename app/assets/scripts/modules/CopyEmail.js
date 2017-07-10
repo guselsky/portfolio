@@ -14,12 +14,11 @@ class CopyEmail {
 	}
 
 	copyToClipboard() {
-		console.log('clicked');
 		this.copyEmailNotification.toggleClass('copy-email-notification--visible');
 	}
 
 	clickMailTo() {
-		console.log('clicked2');
+		
 	}
 }
 
