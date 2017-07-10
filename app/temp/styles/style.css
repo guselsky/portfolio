@@ -446,6 +446,8 @@ img {
     color: #397EA8; }
   .text-box__paragraph--bold {
     font-weight: bold; }
+  .text-box__paragraph--centered {
+    text-align: center; }
 
 .heading {
   margin: 0; }
@@ -787,7 +789,8 @@ img {
 
 .testimonials__testimonial {
   margin: 30px 15px;
-  border-radius: 30px; }
+  border-radius: 30px;
+  text-align: center; }
 
 .testimonials__text {
   padding: 15px;

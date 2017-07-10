@@ -11129,14 +11129,11 @@ var CopyEmail = function () {
 	}, {
 		key: 'copyToClipboard',
 		value: function copyToClipboard() {
-			console.log('clicked');
 			this.copyEmailNotification.toggleClass('copy-email-notification--visible');
 		}
 	}, {
 		key: 'clickMailTo',
-		value: function clickMailTo() {
-			console.log('clicked2');
-		}
+		value: function clickMailTo() {}
 	}]);
 
 	return CopyEmail;
