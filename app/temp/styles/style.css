@@ -804,8 +804,11 @@ img {
   font-style: italic; }
 
 .portfolio__item {
-  margin-top: 30px;
-  overflow: auto; }
+  margin-top: 30px; }
+  @media only screen and (min-width: 800px) {
+    .portfolio__item {
+      height: 350px;
+      overflow: auto; } }
 
 .portfolio__item-header::after {
   content: "";
@@ -825,19 +828,17 @@ img {
     float: none;
     font-size: 16px;
     padding: 5px 15px;
-    margin: 0 15px 15px 15px;
+    margin: 0 15px 15px 0;
     color: #fff;
     border-radius: 15px;
     text-align: left;
-    padding: 5px 0; }
+    background-color: #397EA8;
+    display: inline-block;
+    list-style: none; }
     @media only screen and (min-width: 800px) {
       .portfolio__skills li {
         float: left;
-        margin-right: 15px;
-        margin-left: 0;
-        background-color: #397EA8;
-        list-style: none;
-        padding: 5px 15px; } }
+        margin-left: 0; } }
 
 .email {
   position: absolute;
