@@ -13,13 +13,13 @@
 	float: none;
 	margin-left: 15px;
 
-	@include bp-mamaBear {
+	@include min-800 {
 		width: 30%;
 		float: left;
 		margin-left: 0;
 	}
 
-	@include bp-papaBear {
+	@include min-1200 {
 		width: 25%;
 		float: left;
 	}
