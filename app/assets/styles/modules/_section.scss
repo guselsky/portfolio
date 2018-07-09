@@ -1,7 +1,7 @@
 .section {
 	margin: 0 auto;
 	
-	@include bp-mamaBear{
+	@include min-800 {
 		max-width: 1200px;
 	}
 

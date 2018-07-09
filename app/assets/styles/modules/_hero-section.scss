@@ -15,7 +15,7 @@
 		top: 50%;
 		transform: translateY(-40%);
 
-		@include bp-babyBear {
+		@include min-530 {
 			top: 50%;
 			transform: translateY(-50%);
 		}
@@ -24,7 +24,7 @@
 	&__main-headline {
 		display: none;
 
-		@include bp-babyBear {
+		@include min-530 {
 			display: block;
 		}
 	}
@@ -36,6 +36,6 @@
 	&__text {		
 		margin: 15px;
 		
-		@include bp-babyBear {margin: 30px;}
+		@include min-530 {margin: 30px;}
 	}
 }

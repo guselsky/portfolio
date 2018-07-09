@@ -9,7 +9,7 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	@include bp-babyBear {
+	@include min-530 {
 		display: inline-block;
 		margin-right: 0;
 		margin-left: 0;
@@ -59,9 +59,9 @@
 
 		margin-bottom: 15px;
 
-		@include bp-babyBear { margin-right: 50px; margin-bottom: 0; }
+		@include min-530 { margin-right: 50px; margin-bottom: 0; }
 
-		@include bp-mamaBear { margin-bottom: 0; }
+		@include min-800 { margin-bottom: 0; }
 	}
 
 	&--pointer {
@@ -72,7 +72,7 @@
 		
 		margin: 0 auto;
 
-		@include bp-babyBear {
+		@include min-530 {
 			width: 400px;
 		}
 

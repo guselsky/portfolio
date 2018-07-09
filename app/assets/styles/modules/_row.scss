@@ -6,7 +6,7 @@
 		float: none;
 		width: 100%;
 
-		@include bp-mamaBear {
+		@include min-800 {
 			width: 50%;
 			float: right;
 		}
