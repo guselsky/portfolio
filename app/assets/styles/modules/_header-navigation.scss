@@ -25,9 +25,6 @@
 		position: static;
 		padding-top: 25px;
 		margin-top: 0;
-		float: right;
-		width: 70%;
-		display: block;
 		z-index: 10;
 	}
 
@@ -37,7 +34,11 @@
 	}
 
 	ul {
-		@include clearfix;
+		display: flex;
+		flex-wrap: wrap;
+		@include min-800 {
+			justify-content: space-around;
+		}
 	}
 
 	li {
@@ -45,6 +46,10 @@
 		font-weight: 700;
 		font-size: 50px;
 		float: none;
+		
+		@include max-800 {
+			width: 100%;
+		}
 		
 		&:last-child {
 
@@ -56,6 +61,7 @@
 					border: 2px solid #fff;
 					border-radius: 50px;
 					background-color: green;
+					width: 110px;
 				}				
 			}
 
@@ -70,9 +76,7 @@
 
 		@include min-800 {
 			font-size: 20px;
-			float: left;
 			margin-right: 15px;
-			width: 110px;
 		}
 
 		@include  min-1200 {
