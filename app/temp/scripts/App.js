@@ -11470,9 +11470,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 var copyEmail = new _CopyEmail2.default();
 new Clipboard('.copy-email');
-new _RevealOnScroll2.default((0, _jquery2.default)(".portfolio__item"), "85%");
-new _RevealOnScroll2.default((0, _jquery2.default)(".testimonials__testimonial"), "90%");
-new _RevealOnScroll2.default((0, _jquery2.default)(".about-me"), "90%");
+// new RevealOnScroll($(".portfolio__item"), "85%");
+// new RevealOnScroll($(".testimonials__testimonial"), "90%");
+// new RevealOnScroll($(".about-me"), "90%");
 var smoothScroll = new _SmoothScroll2.default();
 
 /***/ }),
