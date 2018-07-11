@@ -19,3 +19,16 @@
 		margin-left: auto;
 	}
 }
+
+.navigation-container {
+	display: flex;
+
+	@include min-800 {
+		justify-content: space-around;
+		min-width: 800px;
+	}
+
+	@include min-1200 {
+		min-width: 1200px;
+	}
+}
