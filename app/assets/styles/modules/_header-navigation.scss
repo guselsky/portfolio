@@ -6,9 +6,10 @@
 	transition: opacity .3s;
 	position: absolute;
 	left: -100%;
+	visibility: hidden;
 
 	&--visible {
-	
+		visibility: visible;
 		top:0;
 		bottom: 0;
 		left:0;

@@ -521,8 +521,10 @@ img {
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
   position: absolute;
-  left: -100%; }
+  left: -100%;
+  visibility: hidden; }
   .header-navigation--visible {
+    visibility: visible;
     top: 0;
     bottom: 0;
     left: 0;
