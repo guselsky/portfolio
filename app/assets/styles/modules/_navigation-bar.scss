@@ -2,6 +2,12 @@
 	height: 75px;
 	background-color: rgba(0,0,0,1);
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	@include min-800 {
+		justify-content: space-around;
+	}
 	
 	&--fixed {
 		position: fixed;
@@ -14,13 +20,11 @@
 	margin-left: 15px;
 
 	@include min-800 {
-		width: 30%;
 		float: left;
 		margin-left: 0;
 	}
 
 	@include min-1200 {
-		width: 25%;
 		float: left;
 	}
 }
