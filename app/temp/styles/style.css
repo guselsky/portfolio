@@ -541,7 +541,8 @@ img {
       position: static;
       padding-top: 25px;
       margin-top: 0;
-      z-index: 10; } }
+      z-index: 10;
+      visibility: visible; } }
   @media only screen and (min-width: 1200px) {
     .header-navigation {
       width: 540px;
