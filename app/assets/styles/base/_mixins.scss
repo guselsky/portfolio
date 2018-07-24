@@ -1,5 +1,17 @@
-@mixin min-530 {
-	@media only screen and (min-width: 530px) {
+@mixin min-1200 {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin lessThan1380 {
+	@media only screen and (max-width: 1380px) {
+		@content;
+	}
+}
+
+@mixin lessThan990 {
+	@media only screen and (max-width: 990px) {
 		@content;
 	}
 }
@@ -16,8 +28,14 @@
 	}
 }
 
-@mixin min-1200 {
-	@media only screen and (min-width: 1200px) {
+@mixin lessThan640 {
+	@media only screen and (max-width: 640px) {
+		@content;
+	}
+}
+
+@mixin min-530 {
+	@media only screen and (min-width: 530px) {
 		@content;
 	}
 }
