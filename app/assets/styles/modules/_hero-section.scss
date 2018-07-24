@@ -1,5 +1,4 @@
 .hero-section {
-
 	position: relative;
 	padding-top: 75px;
 	background: url('/assets/images/leather.jpg');
@@ -29,7 +28,7 @@
 		top: 50%;
 		transform: translateY(-40%);
 
-		@include min-530 {
+		@include moreThan530 {
 			top: 50%;
 			transform: translateY(-50%);
 		}
@@ -38,18 +37,14 @@
 	&__main-headline {
 		display: none;
 
-		@include min-530 {
+		@include moreThan530 {
 			display: block;
 		}
-	}
-
-	&__sub-headline {
-
 	}
 
 	&__text {		
 		margin: 15px;
 		
-		@include min-530 {margin: 30px;}
+		@include moreThan530 {margin: 30px;}
 	}
 }
