@@ -4,7 +4,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	
-	@include  min-800 {
+	@include  moreThan800 {
 		padding: 0 30px;
 	}
 
@@ -23,12 +23,12 @@
 .navigation-container {
 	display: flex;
 
-	@include min-800 {
+	@include moreThan800 {
 		justify-content: space-around;
 		min-width: 800px;
 	}
 
-	@include min-1200 {
+	@include moreThan1200 {
 		min-width: 1200px;
 	}
 }

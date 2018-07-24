@@ -1,7 +1,7 @@
 .section {
 	margin: 0 auto;
 	
-	@include min-800 {
+	@include moreThan800 {
 		max-width: 1200px;
 	}
 

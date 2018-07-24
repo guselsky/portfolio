@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	@include min-800 {
+	@include moreThan800 {
 		justify-content: space-around;
 	}
 	
@@ -19,12 +19,12 @@
 	float: none;
 	margin-left: 15px;
 
-	@include min-800 {
+	@include moreThan800 {
 		float: left;
 		margin-left: 0;
 	}
 
-	@include min-1200 {
+	@include moreThan1200 {
 		float: left;
 	}
 }

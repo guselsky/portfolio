@@ -6,7 +6,7 @@
 		float: none;
 		width: 100%;
 
-		@include min-800 {
+		@include moreThan800 {
 			width: 50%;
 			float: right;
 		}

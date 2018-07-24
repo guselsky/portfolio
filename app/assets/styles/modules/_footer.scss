@@ -4,7 +4,7 @@
 
 		padding-top: 25px;
 
-		@include  min-1200 {
+		@include moreThan1200 {
 			padding-top: 0;
 		}
 	}
