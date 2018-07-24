@@ -487,7 +487,18 @@ img {
 
 .hero-section {
   position: relative;
-  padding-top: 75px; }
+  padding-top: 75px;
+  background: url("/assets/images/leather.jpg");
+  height: 100vh; }
+  @media only screen and (max-width: 1380px) {
+    .hero-section {
+      background: url("/assets/images/leather--medium.jpg"); } }
+  @media only screen and (max-width: 990px) {
+    .hero-section {
+      background: url("/assets/images/leather--small.jpg"); } }
+  @media only screen and (max-width: 640px) {
+    .hero-section {
+      background: url("/assets/images/leather--smaller.jpg"); } }
   .hero-section__image {
     width: 100%;
     display: block; }
