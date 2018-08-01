@@ -2,12 +2,23 @@
 
 	@include clearfix;
 	
+
 	&--6 {
 		float: none;
 		width: 100%;
 
 		@include moreThan800 {
 			width: 50%;
+			float: right;
+		}
+	}
+
+	&--3 {
+		float: none;
+		width: 100%;
+
+		@include moreThan800 {
+			width: 33%;
 			float: right;
 		}
 	}
