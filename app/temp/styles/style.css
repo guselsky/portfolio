@@ -783,6 +783,14 @@ img {
       width: 50%;
       float: right; } }
 
+.row--3 {
+  float: none;
+  width: 100%; }
+  @media only screen and (min-width: 800px) {
+    .row--3 {
+      width: 33%;
+      float: right; } }
+
 .section {
   margin: 0 auto; }
   @media only screen and (min-width: 800px) {
