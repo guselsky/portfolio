@@ -576,15 +576,6 @@ img {
     @media only screen and (max-width: 800px) {
       .header-navigation li {
         width: 100%; } }
-    .header-navigation li:last-child a {
-      color: green; }
-      @media only screen and (min-width: 800px) {
-        .header-navigation li:last-child a {
-          color: #fff;
-          border: 2px solid #fff;
-          border-radius: 50px;
-          background-color: green;
-          width: 110px; } }
     @media only screen and (min-width: 800px) {
       .header-navigation li:last-child {
         margin-right: 0; } }
@@ -913,3 +904,10 @@ img {
   float: none;
   margin: auto;
   display: block; }
+
+.certifications {
+  padding-bottom: 30px; }
+  .certifications::after {
+    content: "";
+    clear: both;
+    display: table; }

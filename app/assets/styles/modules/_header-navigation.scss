@@ -57,14 +57,14 @@
 		&:last-child {
 
 			a {
-				color: green;
+				// color: green;
 								
 				@include moreThan800 {
-					color: #fff;
-					border: 2px solid #fff;
-					border-radius: 50px;
-					background-color: green;
-					width: 110px;
+					// color: #fff;
+					// border: 2px solid #fff;
+					// border-radius: 50px;
+					// background-color: green;
+					// width: 110px;
 				}				
 			}
 
