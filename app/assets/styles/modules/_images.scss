@@ -2,6 +2,10 @@
 
 	margin-top: 30px;
 
+	@include lessThan800 {
+		margin-bottom: 30px;
+	}
+
 	&--medium {
 		width: 300px;
 	}
