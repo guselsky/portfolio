@@ -409,6 +409,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+a {
+  color: #333; }
+
 .central-container {
   max-width: 1200px;
   padding: 0;
@@ -484,6 +487,8 @@ img {
     text-align: center; }
   .heading--white {
     color: #fff; }
+  .heading--padding-bottom {
+    padding-bottom: 30px; }
 
 .hero-section {
   position: relative;
@@ -808,6 +813,9 @@ img {
 
 .image {
   margin-top: 30px; }
+  @media only screen and (max-width: 800px) {
+    .image {
+      margin-bottom: 30px; } }
   .image--medium {
     width: 300px; }
   .image--round {
@@ -905,9 +913,7 @@ img {
   margin: auto;
   display: block; }
 
-.certifications {
-  padding-bottom: 30px; }
-  .certifications::after {
-    content: "";
-    clear: both;
-    display: table; }
+.certifications::after {
+  content: "";
+  clear: both;
+  display: table; }
