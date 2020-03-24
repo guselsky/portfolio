@@ -3,7 +3,10 @@ const path = require('path');
 const isProduction = process.env.NODE_ENV === 'production' ? true : false;
 
 module.exports = {
-  entry: './src/scripts/App.js',
+  entry: [
+    './src/scripts/App.js',
+    './src/styles/style.scss'
+],
   output: {
     filename: 'main.js',
     path: isProduction ? path.resolve(__dirname, 'dist') : path.resolve(__dirname, './'),
@@ -31,6 +34,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
+              hmr: !isProduction,
               publicPath: './',
             },
           },
