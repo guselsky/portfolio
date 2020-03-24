@@ -1,21 +1,20 @@
 .hero-section {
 	position: relative;
 	padding-top: 75px;
-	background: url('/assets/images/leather.jpg');
+	background: url('/home/david/web_development/portfolio/src/images/leather.jpg');
 	height: 100vh;
 
 	@include lessThan1380{
-		background: url('/assets/images/leather--medium.jpg');
+		background: url('/home/david/web_development/portfolio/src/images/images/leather--medium.jpg');
 	}
 
 	@include lessThan990{
-		background: url('/assets/images/leather--small.jpg');
+		background: url('/home/david/web_development/portfolio/src/images/images/leather--small.jpg');
 	}
 
 	@include lessThan640{
-		background: url('/assets/images/leather--smaller.jpg');
+		background: url('/home/david/web_development/portfolio/src/images/images/leather--smaller.jpg');
 	}
-
 	&__image {
 		width: 100%;
 		display: block;
