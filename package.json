@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "dist": "rm -r dist || mkdir dist",
-    "build": "npm run dist && NODE_ENV=production webpack && cp ./index.html ./dist"
+    "build": "npm run dist && NODE_ENV=production webpack && cp ./index.html ./dist && cp -r ./images ./dist"
   },
   "repository": {
     "type": "git",
