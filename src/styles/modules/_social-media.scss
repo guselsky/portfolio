@@ -1,25 +1,20 @@
 .social-media-section {
-	
 	display:none;
 
-	@include moreThan1200 {
-		display: block;
-		float: left;
-		color: #fff;
-		padding-top: 25px;
+	@include moreThan800 {
+		padding-right: 2rem;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 33%;
 	}
 
-	&__icon-container {
-		float: right;
+	a {
+		color: #fff;
 	}
 
 	&__icon {
-		float: left;
 		font-size: 20px;
 		padding-left: 15px;
-	}
-
-	&__link {
-		color: #fff;
 	}
 }

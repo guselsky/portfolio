@@ -3,6 +3,11 @@
 		@content;
 	}
 }
+@mixin moreThan1200 {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
 
 @mixin lessThan1380 {
 	@media only screen and (max-width: 1380px) {
