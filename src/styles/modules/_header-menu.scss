@@ -17,7 +17,7 @@
 		background-color: rgba($mainWhite, .95);
 	}
 
-	@include moreThan800 {
+	@include moreThan768 {
 		opacity: 1;
 		background-color: $mainBlack;
 		position: static;
@@ -31,7 +31,7 @@
 		width: 100%;
 		justify-content: space-around;
 
-		@include moreThan800 {
+		@include moreThan768 {
 			flex-wrap: nowrap;
 		}
 	}
@@ -44,11 +44,8 @@
 		float: none;
 		width: 100%;
 
-		@include moreThan800 {
+		@include moreThan768 {
 			padding-bottom: 0;
-		}
-
-		@include moreThan800 {
 			font-size: 2rem;
 		}
 	}
@@ -59,7 +56,7 @@
 		display: block;
 		text-align: center;
 
-		@include moreThan800 {
+		@include moreThan768 {
 			color: $mainWhite;
 		}
 	}
@@ -101,7 +98,7 @@
 		background-color: $mainWhite;
 	}
 
-	@include moreThan800 {
+	@include moreThan768 {
 		display: none;
 	}
 }
