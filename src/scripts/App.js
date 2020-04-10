@@ -1,5 +1,4 @@
 import MobileMenu from './modules/MobileMenu';
-import CopyEmail from './modules/CopyEmail';
 // import RevealOnScroll from './modules/RevealOnScroll'
 // import $ from 'jquery';
 import SmoothScroll from './modules/SmoothScroll';

@@ -3,52 +3,9 @@
 		@content;
 	}
 }
-@mixin moreThan1200 {
-	@media only screen and (min-width: 1200px) {
-		@content;
-	}
-}
-
-@mixin lessThan1380 {
-	@media only screen and (max-width: 1380px) {
-		@content;
-	}
-}
-
-@mixin lessThan990 {
-	@media only screen and (max-width: 990px) {
-		@content;
-	}
-}
 
 @mixin moreThan768 {
 	@media only screen and (min-width: 768px) {
 		@content;
-	}
-}
-
-@mixin lessThan800 {
-	@media only screen and (max-width: 800px) {
-		@content;
-	}
-}
-
-@mixin lessThan640 {
-	@media only screen and (max-width: 640px) {
-		@content;
-	}
-}
-
-@mixin moreThan530 {
-	@media only screen and (min-width: 530px) {
-		@content;
-	}
-}
-
-@mixin clearfix {
-	&::after {
-	content: "";
-	clear: both;
-	display: table;
 	}
 }
