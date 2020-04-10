@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --open --inline",
+    "dev": "webpack-dev-server",
     "dist": "rm -r dist || mkdir dist",
     "build": "npm run dist && NODE_ENV=production webpack && cp ./index.html ./dist"
   },

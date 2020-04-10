@@ -12,6 +12,7 @@ module.exports = {
     path: isProduction ? path.resolve(__dirname, 'dist') : path.resolve(__dirname, './'),
   },
   devServer: {
+    open: 'chromium',
     before: function(app, server) {
       server._watch('./**/*.html')
     },
