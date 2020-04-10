@@ -1,71 +1,32 @@
 .btn {
-
-	padding: 10px 15px;
-	display: block;
-	border-radius: 20px;
+	padding: 1rem 1.5rem;
+	border-radius: 2.0rem;
 	text-decoration: none;	
-	width: 172px;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 16px;
-
-	@include moreThan530 {
-		display: inline-block;
-		margin-right: 0;
-		margin-left: 0;
-	}
+	font-size: 1.6rem;
 
 	&:hover {
 		transition-property: all;
 		transition-duration: .3s;
 	}
 
-	&--white-gray {
-		background-color: #FFF;
-		color: $mainColor;
-
-		&:hover {
-			background-color: #000;
-			color: #fff;
-		}
-	}
-
-	&--blue-white {
-		background-color: $mainBlue;
-		color: #fff;
-		border: 1px solid #fff;
-
-		&:hover {
-			background-color: #fff;
-			color: $mainBlue;
-			border: 1px solid $mainBlue;
-		}
-	}
-
 	&--blue {
 		background-color: $mainBlue;
-		color: #fff;
+		color: $mainWhite;
 		border: 2px solid $mainBlue;
-	
 
 		&:hover {
 			background-color: lighten($mainBlue, 15%);
-			color: #fff;
-		border: 2px solid #fff;
+			border: 2px solid lighten($mainBlue, 15%);
+			color: $mainWhite;
 		}
 	}
 
 	&--margin-right {
+		margin-bottom: 1.5rem;
 
-		margin-bottom: 15px;
-
-		@include moreThan530 { margin-right: 50px; margin-bottom: 0; }
-
-		@include moreThan800 { margin-bottom: 0; }
-	}
-
-	&--pointer {
-		cursor: pointer;
+		@include moreThan768 {
+			margin-bottom: 0;
+			margin-right: 50px;
+		}
 	}
 }

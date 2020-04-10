@@ -1,49 +1,28 @@
 .hero-section {
-	position: relative;
-	padding-top: 75px;
-	background: url('/home/david/web_development/portfolio/src/images/leather.jpg');
+	background: url('/images/cobweb-mobile.jpg');
 	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
 
-	@include lessThan1380{
-		background: url('/home/david/web_development/portfolio/src/images/images/leather--medium.jpg');
-	}
-
-	@include lessThan990{
-		background: url('/home/david/web_development/portfolio/src/images/images/leather--small.jpg');
-	}
-
-	@include lessThan640{
-		background: url('/home/david/web_development/portfolio/src/images/images/leather--smaller.jpg');
-	}
-	&__image {
-		width: 100%;
-		display: block;
+	@include moreThan768 {
+		background: url('/images/cobweb.jpg');
 	}
 
 	&__text-content {
-		position: absolute;
-		left: 0;
-		width: 100%;
-		top: 50%;
-		transform: translateY(-40%);
-
-		@include moreThan530 {
-			top: 50%;
-			transform: translateY(-50%);
-		}
+		background: rgba($mainWhite, .5);
+		border-radius: 2rem;
+		padding: 2.5rem;
 	}
 
 	&__main-headline {
-		display: none;
-
-		@include moreThan530 {
-			display: block;
-		}
+		font-size: 3.5rem;
+		margin-bottom: 1rem;
 	}
 
-	&__text {		
-		margin: 15px;
-		
-		@include moreThan530 {margin: 30px;}
+	&__sub-headline {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
 	}
 }
