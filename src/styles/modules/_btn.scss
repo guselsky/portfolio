@@ -56,7 +56,7 @@
 		}
 	}
 
-	&--margin-right-bottom {
+	&--margin-right {
 
 		margin-bottom: 15px;
 
@@ -67,18 +67,5 @@
 
 	&--pointer {
 		cursor: pointer;
-	}
-
-	&__wrapper {
-		
-		margin: 0 auto;
-
-		@include moreThan530 {
-			width: 400px;
-		}
-
-		&--margin-top {
-			margin-top: 30px;
-		}
 	}
 }
