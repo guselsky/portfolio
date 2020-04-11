@@ -1,8 +1,10 @@
 .section {
+	position: relative;
 	margin: 0 auto;
-	
+	min-height: 100vh;
+
 	@include moreThan768 {
-		max-width: 1200px;
+		max-width: 120rem;
 	}
 
 	&--full-width {
@@ -11,10 +13,18 @@
 
 	&--dark {
 		background-color: $mainColor;
-		color: #fff;
+		color: $mainWhite;
 	}
 
-	&--padding-bottom {
-		padding-bottom: 30px;
+	&__heading {
+		padding-top: 3rem;
+		text-align: center;
+		padding-bottom: 3rem;
 	}
+}
+
+#my-work-scrollpoint,
+#contact-scrollpoint {
+	position: absolute;
+	top: -$headerHeight;
 }
