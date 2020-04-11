@@ -1,16 +1,21 @@
-.email {
-	position: absolute;
-	left: -9999px;
+.contact-section {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
 }
 
-.copy-email-notification {
-	color: #fff;
-	transition-property: all;
-	transition-duration: .3s;
+.contact__text-box {
+	font-size: 2.4rem;
+}
 
-	&--visible {
+.contact__email-link {
+	font-size: 3rem;
+	margin-top: 2.5rem;
+	font-weight: bold;
+	a {
 		color: $mainBlue;
-		transition-property: all;
-		transition-duration: .3s;
+		text-decoration: none;
 	}
 }
