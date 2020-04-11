@@ -25,4 +25,19 @@
 		font-size: 2.5rem;
 		margin-bottom: 3rem;
 	}
+
+	&__cta-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+
+		a {
+			width: 100%;
+		}
+
+		@include moreThan768 {
+			a {
+				width: 17.2rem;
+			}
+		}
+	}
 }
