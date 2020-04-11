@@ -12,19 +12,28 @@ html {
 body {
 	color: $mainColor;
 	font-family: 'Roboto', Sans-Serif;
-	width: 100%;
-	margin: auto;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
 }
 
 a {
 	color: #333;
 }
 
-.link {
-	color: $mainBlue;
+p {
+	margin: 0 .5rem;
+	font-size: 1.6rem;
+}
+
+h2 {
+	margin: 0 .5rem;
+	font-size: 3rem;
+}
+
+h3 {
+	margin: 1.5rem .5rem;
+	font-size: 2rem;
+}
+
+h4 {
+	margin: 0 .5rem;
+	padding: .5rem 0 1rem 0;
 }
