@@ -1,18 +1,11 @@
 .footer {
-
-	&__container {
-
-		padding-top: 25px;
-
-		@include moreThan1200 {
-			padding-top: 0;
-		}
-	}
+	height: $footerHeight;
+	background-color: $mainBlack;
+	display: flex;
+	justify-content: space-around;
 
 	&__social-media {
-		width: 96px;
-		float: none;
-		margin: auto;
-		display: block;
+		display: flex;
+		justify-content: center;
 	}
 }
