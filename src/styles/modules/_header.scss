@@ -23,8 +23,8 @@
 }
 
 .logo {
-	padding-top: 2rem;
-	padding-left: 2rem;
+	display: flex;
+	align-items: center;
 
 	@include moreThan768 {
 		width: 33%;
