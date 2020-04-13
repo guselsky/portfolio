@@ -33,9 +33,14 @@
 .logo {
 	display: flex;
 	align-items: center;
+	margin-left: 1.2rem;
 
 	@include moreThan768 {
 		width: 33%;
+	}
+
+	@include moreThan1200 {
+		margin-left: 0;
 	}
 
 	a {
