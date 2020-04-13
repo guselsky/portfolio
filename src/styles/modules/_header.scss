@@ -10,6 +10,14 @@
 	@include moreThan1200 {
 		justify-content: space-around;
 	}
+
+	.social-media-section {
+		display: none;
+
+		@include moreThan1200 {
+			display: flex;
+		}
+	}
 }
 
 .header-container {

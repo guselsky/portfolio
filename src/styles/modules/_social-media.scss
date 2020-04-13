@@ -1,11 +1,10 @@
 .social-media-section {
-	display:none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 
 	@include moreThan768 {
 		padding-right: 1.8rem;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
 		width: 33%;
 	}
 
@@ -17,7 +16,7 @@
 		font-size: 2rem;
 		padding-left: 1.2rem;
 		&:first-child {
-			padding-right: 0;
+			padding-left: 0;
 		}
 	}
 }
