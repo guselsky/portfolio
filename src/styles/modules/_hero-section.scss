@@ -1,5 +1,5 @@
 .hero-section {
-	background: url('/images/cobweb-mobile.jpg');
+	background: url('/images/cobweb-mobile.webp');
 	height: 100vh;
 	display: flex;
 	justify-content: space-around;
@@ -7,7 +7,7 @@
 	text-align: center;
 
 	@include moreThan768 {
-		background: url('/images/cobweb.jpg');
+		background: url('/images/cobweb.webp');
 	}
 
 	&__text-content {
