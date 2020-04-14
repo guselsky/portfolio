@@ -1,18 +1,63 @@
 /* eslint-disable no-undef */
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-const isProduction = process.env.NODE_ENV === 'production' ? true : false;
+const currentTask = process.env.npm_lifecycle_event;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const fse = require('fs-extra');
 
-module.exports = {
+class RunAfterCompile {
+  apply(compiler) {
+    compiler.hooks.done.tap('Copy images', function() {
+      fse.copySync('./images', './dist/images');
+    });
+  }
+}
+
+let cssConfig = {
+  test: /\.(sa|sc|c)ss$/,
+  use: [
+    {
+      loader: MiniCssExtractPlugin.loader,
+    },
+    'css-loader',
+    'sass-loader',
+  ],
+};
+
+let jsConfig =  {
+  test: /\.js$/,
+  exclude: /node_modules/,
+  loader: "babel-loader",
+  options: {
+    presets: ['@babel/preset-env']
+  }
+}
+
+let config = {
   entry: [
     './src/scripts/App.js',
     './src/styles/style.scss'
-],
-  output: {
-    filename: 'main.js',
-    path: isProduction ? path.resolve(__dirname, 'dist') : path.resolve(__dirname, './'),
+  ],
+  module: {
+    rules: [
+      cssConfig,
+      jsConfig
+    ],
   },
-  devServer: {
+  plugins: [new HtmlWebpackPlugin({filename: 'index.html', template: './index.html'})],
+};
+
+//Development settings
+if (currentTask == 'dev') {
+  config.mode = 'development';
+  config.output = {
+    filename: 'main.js',
+    path: path.resolve(__dirname, './'),
+  };
+
+  config.devServer = {
     open: 'chromium',
     before: function(app, server) {
       server._watch('./**/*.html')
@@ -21,34 +66,31 @@ module.exports = {
     hot: true,
     port: 3000,
     host: '0.0.0.0'
-  },
-  mode: "development",
-  plugins: [
+  };
+  config.plugins.push(
     new MiniCssExtractPlugin({
       filename: './style.css',
-    }),
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.(sa|sc|c)ss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: !isProduction,
-              publicPath: './',
-            },
-          },
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader"
-      }
-    ],
-  },
-};
+    })
+  );
+}
+
+// Build Settings
+if (currentTask == 'build') {
+  config.mode = 'production';
+  config.output = {
+    filename: '[name].[chunkhash].js',
+    chunkFilename: '[name].[chunkhash].js',
+    path: path.resolve(__dirname, 'dist')
+  };
+  config.optimization = {
+    splitChunks: {chunks: 'all'},
+    minimize: true,
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+  };
+  config.plugins.push(
+    new MiniCssExtractPlugin({ filename: 'style.[chunkhash].css' }),
+    new RunAfterCompile()
+  );
+}
+
+module.exports = config;
