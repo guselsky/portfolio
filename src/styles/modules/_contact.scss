@@ -2,15 +2,19 @@
 	height: 100vh;
 	display: flex;
 	justify-content: space-around;
+	flex-direction: column;
 	text-align: center;
-
-	@include moreThan768 {
-		align-items: center;
-	}
 }
 
 .contact__text-box {
 	font-size: 2.4rem;
+}
+
+.contact__text-content {
+	height: 100%;
+	@include moreThan768 {
+		height: auto;
+	}
 }
 
 .contact__email-link {
