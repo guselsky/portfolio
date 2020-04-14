@@ -13,6 +13,7 @@
 		background-color: $mainBlue;
 		color: $mainWhite;
 		border: 2px solid $mainBlue;
+		font-weight: bold;
 
 		&:hover {
 			background-color: lighten($mainBlue, 15%);
