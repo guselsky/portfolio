@@ -20,6 +20,9 @@ let cssConfig = {
   use: [
     {
       loader: MiniCssExtractPlugin.loader,
+      options: {
+        hmr: true,
+      }
     },
     'css-loader',
     'sass-loader',
