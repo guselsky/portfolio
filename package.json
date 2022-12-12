@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server",
+    "serve": "npm run dev",
     "dist": "rm -r dist || mkdir dist",
     "build": "npm run dist && webpack"
   },
