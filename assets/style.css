@@ -149,6 +149,7 @@ h4 {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%
 }
 
@@ -254,12 +255,22 @@ h4 {
     }
 }
 
+.menu-button {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.9rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .menu-icon {
     width: 2rem;
-    height: 1.9rem;
+    height: 2rem;
     position: absolute;
-    top: 2.55rem;
-    right: 1.2rem
+    top: 1rem;
+    right: 1rem;
 }
 
 .menu-icon:before {
