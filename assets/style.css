@@ -271,6 +271,7 @@ h4 {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    pointer-events: none;
 }
 
 .menu-icon:before {

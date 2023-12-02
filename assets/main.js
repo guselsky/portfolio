@@ -1,21 +1,26 @@
 (function () {
-    const menuIcon = document.getElementsByClassName('menu-icon')[0];
+    const menuButton = document.getElementsByClassName('menu-button')[0];
     const menuContent = document.getElementsByClassName('header-menu')[0];
     const menuListItems = document.getElementsByClassName('header-menu__list-item');
     const header = document.getElementsByClassName('header-container')[0];
-    const toggleMenu = () => {
+
+    let menuIsOpen = false;
+
+    const toggleMenu = (e) => {
         menuContent.classList.toggle('header-menu--visible');
+        menuIsOpen = !menuIsOpen;
+        menuButton.setAttribute('aria-expanded', String(menuIsOpen));
     }
 
     const closeMenu = (e) => {
-        console.log('e', e);
-        if (e.target === menuIcon) {
+        if (e.target === menuButton) {
             return false;
         }
+        menuIsOpen = false;
         menuContent.classList.remove('header-menu--visible');
     }
 
-    menuIcon.addEventListener('click', toggleMenu);
+    menuButton.addEventListener('click', toggleMenu);
 
     for (let i = 0; i < menuListItems.length; i++) {
         menuListItems[i].addEventListener('click', toggleMenu);
