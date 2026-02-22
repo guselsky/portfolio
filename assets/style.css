@@ -299,7 +299,7 @@ h4 {
 }
 
 @media only screen and (min-width: 768px) {
-  .menu-icon {
+  .menu-button {
     display: none;
   }
 }
