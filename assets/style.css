@@ -186,15 +186,8 @@ h4 {
 
 .header-menu {
   margin-top: 7.8rem;
-  opacity: 0;
-  transition: opacity 0.3s;
-  position: absolute;
-  left: -100%;
   display: flex;
   align-items: center;
-}
-
-.header-menu--visible {
   top: 0;
   bottom: 0;
   left: 0;
@@ -234,6 +227,8 @@ h4 {
   font-size: 3.6rem;
   float: none;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media only screen and (min-width: 768px) {
@@ -246,7 +241,7 @@ h4 {
 .header-menu a {
   color: #333;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   text-align: center;
 }
 
