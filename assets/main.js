@@ -6,11 +6,8 @@
   const header = document.getElementsByClassName("header-container")[0];
   const mobileMenu = header.getElementsByTagName("dialog")[0];
 
-  let menuIsOpen = false;
-
   const openMenu = (e) => {
-    menuIsOpen = true;
-    menuButton.setAttribute("aria-expanded", String(menuIsOpen));
+    menuButton.setAttribute("aria-expanded", "true");
     mobileMenu.showModal();
   };
 
@@ -18,8 +15,7 @@
     if (e.target === menuButton) {
       return false;
     }
-    menuIsOpen = false;
-    menuButton.setAttribute("aria-expanded", String(menuIsOpen));
+    menuButton.setAttribute("aria-expanded", "false");
     mobileMenu.close();
   };
 
