@@ -401,6 +401,10 @@ header .social-media-section {
     color: #fff;
   }
 
+  header .social-media-section {
+    display: flex;
+  }
+
   .hero-section__cta-wrapper a {
     width: 17.2rem;
   }
@@ -428,9 +432,6 @@ header .social-media-section {
     justify-content: space-around;
   }
 
-  header .social-media-section {
-    display: flex;
-  }
   .header-container {
     width: 124rem;
   }
