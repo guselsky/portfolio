@@ -151,7 +151,7 @@ header .social-media-section {
   right: 0;
   position: fixed;
   opacity: 1;
-  background-color: hsla(0, 0%, 100%, 0.95);
+  background-color: #fff;
 }
 
 .header-menu ul {
