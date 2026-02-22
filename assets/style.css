@@ -80,23 +80,10 @@ h4 {
   margin-bottom: 1.8rem;
 }
 
-@media only screen and (min-width: 768px) {
-  .btn--margin-right {
-    margin-bottom: 0;
-    margin-right: 4.2rem;
-  }
-}
-
 .section {
   position: relative;
   margin: 0 auto;
   min-height: 100vh;
-}
-
-@media only screen and (min-width: 768px) {
-  .section {
-    max-width: 120rem;
-  }
 }
 
 .section--full-width {
@@ -120,7 +107,7 @@ h4 {
   top: -7.8rem;
 }
 
-.header {
+header {
   height: 7.8rem;
   background-color: #000;
   width: 100%;
@@ -130,20 +117,8 @@ h4 {
   z-index: 10;
 }
 
-@media only screen and (min-width: 1200px) {
-  .header {
-    justify-content: space-around;
-  }
-}
-
-.header .social-media-section {
+header .social-media-section {
   display: none;
-}
-
-@media only screen and (min-width: 1200px) {
-  .header .social-media-section {
-    display: flex;
-  }
 }
 
 .header-container {
@@ -153,28 +128,10 @@ h4 {
   width: 100%;
 }
 
-@media only screen and (min-width: 1200px) {
-  .header-container {
-    width: 124rem;
-  }
-}
-
 .logo {
   display: flex;
   align-items: center;
   margin-left: 1.2rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .logo {
-    width: 33%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .logo {
-    margin-left: 0;
-  }
 }
 
 .logo a {
@@ -197,27 +154,11 @@ h4 {
   background-color: hsla(0, 0%, 100%, 0.95);
 }
 
-@media only screen and (min-width: 768px) {
-  .header-menu {
-    opacity: 1;
-    background-color: #000;
-    position: static;
-    margin-top: 0;
-    width: 34%;
-  }
-}
-
 .header-menu ul {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-}
-
-@media only screen and (min-width: 768px) {
-  .header-menu ul {
-    flex-wrap: nowrap;
-  }
 }
 
 .header-menu li {
@@ -231,24 +172,11 @@ h4 {
   justify-content: space-around;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-menu li {
-    padding-bottom: 0;
-    font-size: 2rem;
-  }
-}
-
 .header-menu a {
   color: #333;
   text-decoration: none;
   display: inline-block;
   text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .header-menu a {
-    color: #fff;
-  }
 }
 
 .menu-button {
@@ -298,12 +226,6 @@ h4 {
   background-color: #fff;
 }
 
-@media only screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
-
 .hero-section {
   background-image: url(cobweb-mobile.webp);
   background-size: cover;
@@ -312,12 +234,6 @@ h4 {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .hero-section {
-    background-image: url(cobweb.webp);
-  }
 }
 
 .hero-section__text-content {
@@ -340,23 +256,10 @@ h4 {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-  .hero-section__cta-wrapper a {
-    width: 17.2rem;
-  }
-}
-
 .social-media-section {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-
-@media only screen and (min-width: 768px) {
-  .social-media-section {
-    padding-right: 1.8rem;
-    width: 33%;
-  }
 }
 
 .social-media-section a {
@@ -439,12 +342,6 @@ h4 {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-  .contact__text-content {
-    height: auto;
-  }
-}
-
 .contact__email-link {
   font-size: 3rem;
   margin-top: 2.4rem;
@@ -467,4 +364,77 @@ h4 {
   display: flex;
   justify-content: center;
   padding-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn--margin-right {
+    margin-bottom: 0;
+    margin-right: 4.2rem;
+  }
+
+  .section {
+    max-width: 120rem;
+  }
+
+  .logo {
+    width: 33%;
+  }
+
+  .header-menu {
+    opacity: 1;
+    background-color: #000;
+    position: static;
+    margin-top: 0;
+    width: 34%;
+  }
+
+  .header-menu ul {
+    flex-wrap: nowrap;
+  }
+
+  .header-menu li {
+    padding-bottom: 0;
+    font-size: 2rem;
+  }
+
+  .header-menu a {
+    color: #fff;
+  }
+
+  .hero-section__cta-wrapper a {
+    width: 17.2rem;
+  }
+
+  .hero-section {
+    background-image: url(cobweb.webp);
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .social-media-section {
+    padding-right: 1.8rem;
+    width: 33%;
+  }
+
+  .contact__text-content {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    justify-content: space-around;
+  }
+
+  header .social-media-section {
+    display: flex;
+  }
+  .header-container {
+    width: 124rem;
+  }
+  .logo {
+    margin-left: 0;
+  }
 }
