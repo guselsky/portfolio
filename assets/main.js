@@ -1,10 +1,8 @@
 (function () {
-  const menuButton = document.getElementsByClassName("menu-button")[0];
-  const menuListItems = document.getElementsByClassName(
-    "header-menu__list-item",
-  );
-  const header = document.getElementsByClassName("header-container")[0];
-  const mobileMenu = header.getElementsByTagName("dialog")[0];
+  const menuButton = document.querySelector(".menu-button");
+  const menuListItems = document.querySelector(".header-menu__list-item");
+  const header = document.querySelector(".header-container");
+  const mobileMenu = header.querySelector("dialog");
 
   const openMenu = (e) => {
     menuButton.setAttribute("aria-expanded", "true");
